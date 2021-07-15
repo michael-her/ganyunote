@@ -1,0 +1,43 @@
+[0704/220722.113:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0705/000635.933:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0705/194343.221:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\michael\AppData\Local\Naver\Naver Whale\User Data\Crashpad\attachments\a3f28bdd-f6ad-4e42-a0ca-ac6b028dcb06: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0705/230310.168:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\michael\AppData\Local\Naver\Naver Whale\User Data\Crashpad\attachments\f101a7ec-b007-4612-91bf-c1fa8c661899: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0706/000635.979:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0706/014151.814:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\michael\AppData\Local\Naver\Naver Whale\User Data\Crashpad\attachments\ead53c7b-caba-4a8b-bd01-bc5dc2f356ab: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0706/201409.475:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\michael\AppData\Local\Naver\Naver Whale\User Data\Crashpad\attachments\d7317eed-4b71-48cd-9552-ef9a5f6dc044: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0706/221340.187:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\michael\AppData\Local\Naver\Naver Whale\User Data\Crashpad\attachments\4be48442-2df0-4f2f-91aa-84132e1f4984: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0707/000617.179:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\michael\AppData\Local\Naver\Naver Whale\User Data\Crashpad\attachments\cd5d242a-f311-45a1-a74b-55facb183e79: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0707/000636.039:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0707/024150.319:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\michael\AppData\Local\Naver\Naver Whale\User Data\Crashpad\attachments\5845c27d-6da9-418d-add5-ec7ffc06dc8c: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0707/235831.077:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\michael\AppData\Local\Naver\Naver Whale\User Data\Crashpad\attachments\4f5f2202-a3ba-4aa6-95ac-d34bb5ee6c1f: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0708/000636.163:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+[0708/030813.408:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.409:ERROR:exception_snapshot_win.cc(99)] thread ID 15596 not found in process
+[0708/030813.409:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.409:ERROR:exception_snapshot_win.cc(99)] thread ID 23656 not found in process
+[0708/030813.409:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.410:ERROR:exception_snapshot_win.cc(99)] thread ID 8224 not found in process
+[0708/030813.414:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.414:ERROR:exception_snapshot_win.cc(99)] thread ID 21008 not found in process
+[0708/030813.425:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.425:ERROR:exception_snapshot_win.cc(99)] thread ID 22660 not found in process
+[0708/030813.427:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.427:ERROR:exception_snapshot_win.cc(99)] thread ID 22100 not found in process
+[0708/030813.431:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.431:ERROR:exception_snapshot_win.cc(99)] thread ID 13160 not found in process
+[0708/030813.431:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.431:ERROR:exception_snapshot_win.cc(99)] thread ID 22196 not found in process
+[0708/030813.441:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.441:ERROR:exception_snapshot_win.cc(99)] thread ID 7964 not found in process
+[0708/030813.442:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.442:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.442:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.442:ERROR:exception_snapshot_win.cc(99)] thread ID 10288 not found in process
+[0708/030813.442:ERROR:exception_snapshot_win.cc(99)] thread ID 304 not found in process
+[0708/030813.442:ERROR:exception_snapshot_win.cc(99)] thread ID 21932 not found in process
+[0708/030813.447:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0708/030813.448:ERROR:exception_snapshot_win.cc(99)] thread ID 19312 not found in process
+[0708/030813.465:ERROR:process_info.cc(329)] VirtualQueryEx: 액세스가 거부되었습니다. (0x5)
+[0708/030813.465:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0708/030813.465:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0708/030813.465:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 기존 프로세스에 액세스하려고 했습니다. (0xc000010a)

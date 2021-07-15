@@ -1,0 +1,39 @@
+{
+  "general": {
+
+  },
+  "character": {
+    "stat": {
+      "constellation": "Constellation Ascension",
+      "level": "Character Level",
+      "attackLv": "Normal Attack Level",
+      "skillLv": "Elemental Skill Level",
+      "burstLv": "Elemental Burst Level",
+      "weapon": "Weapon",
+      "weaponLv": "Weapon Level",
+      "weaponSub": "Weapon Sub-stat",
+      "maxHp": "Maximum HP",
+      "atk": "Attack",
+      "def": "Defence",
+      "em": "Element Mastery",
+      "stamina": "Maximum Stamina",
+      "critRate": "Critical Rate",
+      "critDmg": "Critical Damage",
+      "healBonus": "Heal Bonus",
+      "healedBonus": "Healed Bonus",
+      "er": "Enery Recharge Bonus",
+      "cdReduce": "Cooldown Reduction",
+      "shieldStrength": "Shield Bonus",
+      "pyroDmg": "Pyro Damage Bonus",
+      "pyroRes": "Pyro Resistance",
+      "hydroDmg": "Hydro Damage Bonus",
+      "hydroRes": "Hydro Resistance",
+      "dendroDmg": "Dendro Damage Bonus",
+      "dendroRes": "Dendro Resistance",
+      "cryoDmg": "Cryo Damage Bonus",
+      "cryoRes": "Cryo Resistance",
+      "physicalDmg": "Physical Damage Bonus",
+      "physicalRes": "Physical Resistance"
+    }
+  }
+}

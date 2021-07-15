@@ -1,0 +1,2072 @@
+{
+  "general": {
+    "status": "스테이터스",
+    "characters": "캐릭터"
+  },
+  "character": {
+    "stat": {
+      "mainTalent": "주 특기",
+      "constellation": "운명의 별자리",
+      "level": "캐릭터 레벨",
+      "attackLv": "일반 공격 레벨",
+      "skillLv": "원소 스킬 레벨",
+      "burstLv": "원소 폭발 레벨",
+      "weapon": "무기",
+      "weaponRefine": "무기 재련",
+      "weaponLv": "무기 레벨",
+      "weaponAtk": "무기 공격력",
+      "weaponSub": "무기 부가 능력치",
+      "artifact": "성유물 세트1",
+      "artifactSub": "성유물 세트2",
+      "beetickCount": "유효 부옵 개수",
+      "suggestStat1": "부옵#1",
+      "suggestStat2": "부옵#2",
+      "suggestStat3": "부옵#3",
+      "suggestStat4": "부옵#4",
+      "maxHp": "HP 최대치",
+      "atk": "공격력",
+      "def": "방어력",
+      "maxHp%": "HP 최대치%",
+      "atk%": "공격력%",
+      "def%": "방어력%",
+      "increaseDmg%": "피해증가%",
+      "critRate%": "치명타 확률",
+      "critDmg%": "치명타 피해",
+      "allDmg%": "모든 피해",
+      "elementalDmg%": "모든 원소 피해",
+      "skillDmg%": "스킬 피해",
+      "normalAttackDmg%": "평타 피해",
+      "chargedAttackDmg%": "강공격 피해",
+      "plungeAttackDmg%": "낙하 공격 피해",
+      "normalAttacksDmg%": "일반 공격 피해",
+      "normalAttackMultiplier%": "일반 공격 계수",
+      "chargedAttackCritRate%": "강공격 치명타 확률",
+      "em": "원소 마스터리",
+      "swirlDmg%": "확산 반응 피해",
+      "overloadDmg%": "과부하 반응 피해",
+      "electroChargedDmg%": "감전 반응 피해",
+      "superconductDmg%": "초전도 반응 피해",
+      "burningDmg%": "연소 피해",
+      "shatteredDmg%": "쇄빙 피해",
+      "vaporizeDmg%": "증발 반응 피해",
+      "meltDmg%": "융해 반응 피해",
+      "stamina": "스태미나 최대치",
+      "healBonus%": "치유 보너스",
+      "healedBonus%": "받는 치유 보너스",
+      "er%": "원소 충전 효율",
+      "cdReduce%": "재사용 대기시간 감소",
+      "shieldStrength%": "보호막 강화",
+      "pyroDmg%": "불 피해 보너스",
+      "pyroRes%": "불 내성",
+      "hydroDmg%": "물 피해 보너스",
+      "hydroRes%": "물 내성",
+      "dendroDmg%": "풀 피해 보너스",
+      "dendroRes%": "풀 내성",
+      "anemoDmg%": "바람 피해 보너스",
+      "anemoRes%": "바람 내성",
+      "cryoDmg%": "얼음 피해 보너스",
+      "cryoRes%": "얼음 내성",
+      "geoDmg%": "바위 피해 보너스",
+      "geoRes%": "바워 내성",
+      "physDmg%": "물리 피해 보너스",
+      "physRes%": "물리 내성"
+    },
+    "talent": "특성",
+    "combatTalent": "전투특성",
+    "uniqueTalent": "고유특성",
+    "talentExplained": "특성 소개",
+    "talentDetails": "상세 속성",
+    "talentLv": "Lv.{{level}}",
+    "talentLvAdd": "특성 레벨+{{add}}",
+    "constellations": "운명의 자리",
+    "constellationLv": "운명의 자리 - 제<c=#0CFAFF>{{level}}</c>단계",
+    "ganyu": {
+      "name": "감우",
+      "title": "리월의 수호자",
+      "normalAttacks": "일반 공격: 유천 사격술",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "활로 최대 6번 공격한다.",
+      "chargedAttack": "조준 사격",
+      "chargedAttack_Explained": [
+        "피해가 더 크고 정확한 <c=#FFE48F>조준 사격</c>을 한다.",
+        "조준 시 서리의 힘이 화살 촉에 계속해서 모여 공격과 동시에 발사된다. 차지의 시간에 따라 다른 효과가 발동된다:",
+        "- 1단 차지: 한기가 서린 화살을 발사해 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+        "- 2단 차지: 서리꽃 화살을 발사해 <c=#87F6FD>얼음 원소 피해</c>를 준다. 명중 후 서리꽃이 피어나 <c=#87F6FD>얼음 원소 범위 피해</c>를 다시 한번 준다."
+      ],
+      "frostflakeArrow": "서리꽃 화살",
+      "frostflakeArrowBloom": "서리꽃 개화",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 화살비를 쏜 후 빠른 속도로 땅에 착지한다. 땅에 닿으면 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 산과 강의 기린 흔적",
+      "elementalSkill_Explained": "감우가 얼음 연꽃을 남긴 후 빠른 속도로 후퇴하고 모든 이매망량을 멀리하며 <c=#87F6FD>얼음 원소 범위 피해</c>를 준다.",
+      "elementalSkillSummon": "얼음 연꽃",
+      "elementalSkillSummon_Explained": [
+        "- 주변의 적을 계속 도발하며 적의 공격을 유인한다.",
+        "- 얼음 연꽃은 감우의 HP 최대치의 영향을 받는다.",
+        "- 얼음 연꽃은 파괴당하거나 지속 시간이 끝나면 격렬히 피어나 <c=#87F6FD>얼음 원소 범위 피해</c>를 준다.",
+        "",
+        "「절 봤다구요? 잘못 본 거 아닌가요? 전 그때 야근 중이었을 텐데요」"
+      ],
+      "elementalBurst": "원소 폭발: 쏟아지는 천화",
+      "elementalBurst_Explained": [
+        "대기 중의 서리눈을 모아 퇴마의 빙령주를 소환한다.",
+        "빙령주가 존재하는 동안 계속해서 고드름을 내려 공격 범위 내의 적에게 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+        "",
+        "감우는 달콤한 비를 내릴 수도 있지만 사마외도엔 고한의 눈보라가 될 뿐이다"
+      ],
+      "lv20": "고유특성20: 단 하나의 마음",
+      "lv20_Explained": "서리꽃 화살 발사 후 5초 동안 다음으로 발사되는 서리꽃 화살과 이로 인해 피어나는 서리꽃의 치명타 확률이 20% 증가한다.",
+      "lv70": "고유특성70: 천지교태",
+      "lv70_Explained": "<c=#FFE48F>쏟아지는 천화</c> 영역 내에서 현재 필드 위 캐릭터는 <c=#87F6FD>얼음 원소 피해 보너스</c>를 20% 획득한다.",
+      "lv0": "고유특성: 감춰둔 활",
+      "lv0_Explained": "활 무기 단조 시 소모한 광석을 15% 반환한다.",
+      "C1_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Dew-Drinker.png",
+      "C2_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/The_Auspicious.png",
+      "C3_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Cloud-Strider.png",
+      "C4_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Westward_Sojourn.png",
+      "C5_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/The_Merciful.png",
+      "C6_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/The_Clement.png",
+      "C1": "제1단계 · 이슬 먹는 신수",
+      "C1_Explained": [
+        "2단 차지 강공격의 서리꽃 화살 혹은 피어난 서리꽃에 명중된 적은 <c=#87F6FD>얼음 원소 내성</c>이 15% 감소한다.",
+        "지속 시간: 6초",
+        "또한 명중 시 감우의 원소 에너지를 2pt 회복한다. 서리꽃 화살과 피어나는 서리꽃의 명중 여부와 상관없이, 2단 차지 강공격은 매번 원소 에너지 회복 효과를 1번만 발동한다."
+      ],
+      "C2": "제2단계 · 획린(獲麟)",
+      "C2_Explained": "<c=#FFE48F>산과 강의 기린 흔적</c>의 사용 가능 횟수가 1회 증가한다.",
+      "C3": "제3단계 · 구름 여행",
+      "C3_Explained": [
+        "<c=#FFE48F>쏟아지는 천화</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 서수(西狩)",
+      "C4_Explained": [
+        "<c=#FFE48F>쏟아지는 천화</c> 영역 내에서 적이 받는 피해가 증가한다. 해당 효과는 시간이 지날수록 점점 강해진다.",
+        "초기 받는 피해 보너스: 5%, 이후 3초마다 5%씩 증가하며 최대 25%까지 상승한다.",
+        "영역을 벗어나면 효과는 최대 3초 동안 유지된다."
+      ],
+      "C5": "제5단계 · 잡초 근절",
+      "C5_Explained": [
+        "<c=#FFE48F>산과 강의 기린 흔적</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 살생의 발걸음",
+      "C6_Explained": "<c=#FFE48F>산과 강의 기린 흔적</c> 발동 후 30초 안에 발동되는 첫 번째 서리꽃 화살은 차지 없이 발동할 수 있다."
+    },
+    "xiao": {
+      "name": "샤오",
+      "title": "호법야차",
+      "normalAttacks": "일반 공격: 권적미진",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "창으로 최대 6번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스테미나를 소모해 <c=#FFE48F>올려치기 공격</c>을 가한다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": [
+        "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+        "소는 낙하 공격 시, 추락 피해를 입지 않는다."
+      ],
+      "elementalSkill": "원소 스킬: 풍륜양립",
+      "elementalSkill_Explained": [
+        "아주 빠르게 돌진하여 경로상의 적에게 <c=#87F6FD>바람 원소 피해</c>를 준다.",
+        "공중에서 발동 가능.",
+        "초기 사용 가능 횟수: 2회",
+        "",
+        "타국에선 세계가 두 개의 거대한 풍륜에 의해 파괴도리 것이라는 전설이 있다. 소(魈)의 창술은 절정에 이르러 마치 두 개의 풍륜이 동시에 적을 찢어버리는 것처럼 보인다"
+      ],
+      "elementalBurst": "원소 폭발: 나자의 춤",
+      "elementalBurst_Explained": [
+        "수천 년 전 악마와 요괴들을 두려움에 떨게 했던 야차의 가면을 착용한다."
+      ],
+      "elementalBurstStance": "야차의 가면",
+      "elementalBurstStance_Explained": [
+        "- 소의 점프력이 대폭 상승한다.",
+        "- 공격 범위와 가하는 피해가 증가한다.",
+        "- 공격은 <c=#87F6FD>바람 원소 피해</c>로 전환되며, 해당 원소 전환은 다른 원소 부여 효과로 대체될 수 없다.",
+        "",
+        "해당 상태일 때 소는 HP를 지속해서 잃는다.",
+        "해당 효과는 소가 퇴장할 때 사라진다.",
+        "",
+        "항마의 가면을 쓰면 요마를 소멸시키는 잔인한 「호법야차」가 나타난다. 강한 힘을 얻었으나, 큰 고통도 함께 따라올지니 그 이름은 「나자의 춤」이다"
+      ],
+      "lv20": "고유특성20: 항마·평요대성",
+      "lv20_Explained": [
+        "나자의 춤 상태에서 소(魈)가 가하는 모든 피해^^가 5% 증가하고 이후 스킬 지속 시간 동안 3초가 지날 때마다 가하는 피해가 추가로 5% 증가한다.",
+        "피해 보너스는 최대 25%까지 획득한다."
+      ],
+      "lv70": "고유특성70: 괴겁·국토연진",
+      "lv70_Explained": [
+        "<c=#FFE48F>풍륜양립</c> 발동 후 7초 동안 <c=#FFE48F>풍륜양립</c>으로 가하는 피해가 15% 증가한다.",
+        "지속시간: 7초. 최대 중첩수: 3회. 중첩 시 지속 시간이 갱신된다."
+      ],
+      "lv0": "고유특성: 신통·공중 유희",
+      "lv0_Explained": [
+        "파티 내 자신의 캐릭터의 등반 시 소모하는 스태미나가 20% 감소한다.",
+        "같은 효과의 고유 특성과 중첩되지 않는다."
+      ],
+      "C1_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Dissolution_Eon_-_Destroyer_of_Worlds.png",
+      "C2_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Annihilation_Eon_-_Blossom_of_Kaleidos.png",
+      "C3_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Conqueror_of_Evil_Wrath_Deity.png",
+      "C4_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Transcension_-_Extinction_of_Suffering.png",
+      "C5_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Evolution_Eon_-_Origin_of_Ignorance.png",
+      "C6_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Conqueror_of_Evil_Guardian_Yaksha.png",
+      "C1": "제1단계 · 괴겁·삼계 파멸",
+      "C1_Explained": "<c=#FFE48F>풍륜양립</c>의 사용 가능 횟수가 1회 증가한다.",
+      "C2": "제2단계 · 공겁·피어난 공험의 꽃",
+      "C2_Explained": "대기 상태일 때 소 자신의 원소 충전 효율이 25% 상승한다.",
+      "C3": "제3단계 · 항마·분노의 형상",
+      "C3_Explained": [
+        "<c=#FFE48F>풍륜양립</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 신통·사라진 고통",
+      "C4_Explained": "소의 HP가 50% 미만일 때 방어력이 100% 상승한다.",
+      "C5": "제5단계 · 성겁·늘어나는 번뇌",
+      "C5_Explained": [
+        "<c=#FFE48F>나자의 춤</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 항마·호법야차",
+      "C6_Explained": "<c=#FFE48F>나자의 춤</c> 상태에서 <c=#FFE48F>낙하 공격</c>으로 최소 2명의 적을 명중하면 즉시 풍륜양립 사용 가능 횟수를 1회 획득하며, 1초 동안 재사용 대기시간에 상관없이 풍륜양립을 발동할 수 있다."
+    },
+    "kazuha": {
+      "name": "카에데하라 카즈하",
+      "title": "파도를 쫓는 단풍",
+      "normalAttacks": "일반 공격: 아류 검술",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 순간적으로 전방을 향해 검을 2번 휘두른다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고, 착지 시 범위 피해를 준다. 치하야부루 발동 이후 낙하 공격시, <c=#FFE48F>낙하공격·폭풍 베기</c>로 전환된다.",
+      "plungeAttackCombo": "낙하 공격·폭풍 베기",
+      "plungeAttackCombo_Explained": "원소 스킬 <c=#FFE48F>치하야부루</c>를 발동하여 낙하 공격을 진행하고, 가하는 피해는 <c=#87F6FD>바람 원소 피해</c>로 전환된다. 낙하 시 비검에 의해 생성되는 풍혈이 주변의 물체와 적을 끌어당긴다.",
+      "elementalSkill": "원소 스킬: 치하야부루",
+      "elementalSkill_Explained":  [
+        "바람처럼 격양된 비검을 펼치면 적과 주변 물체를 끌어당기고 범위 내의 적에게 <c=#87F6FD>바람 원소 피해</c>를 주고 용트림 같은 세찬 기류가 솟아오른다.",
+        "카에데하라 카즈하의 원소 스킬 <c=#FFE48F>치하야부루</c>에 의해 공중에 띄워졌을 때 낙하 공격을 하면 낙하 공격·폭풍 베기를 발동한다."
+      ],
+      "elementalSkillClick": "짧은 터치",
+      "elementalSkillClick_Explained": "공중에서 발동한다.",
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": "힘을 모은 후 발동하며 짧게 누를 때보다 더 큰 <c=#87F6FD>바람 원소 피해</c>를 준다.",
+      "elementalSkillCombo": "낙하 공격·폭풍 베기",
+      "elementalSkillCombo_Explained": [
+        "원소 스킬 <c=#FFE48F>치하야부루</c> 발동에 의한 낙하 공격은 가하는 피해가 <c=#87F6FD>바람 원소 피해</c>로 전환되며, 낙하 시 비검에 의해 생성되는 풍혈이 주변의 물체와 적을 끌어당긴다.",
+        "",
+        "「단풍소매에 슬픈 바람이 불면, 신의 세상은 만년이요, 인간 세상은 백년이니, 가을 산이 붉게 물드네」"
+      ],
+      "elementalBurst": "원소 폭발: 카즈하의 일도",
+      "elementalBurst_Explained": [
+        "아류의 오의를 사용할 때 강풍이 불어와 <c=#87F6FD>바람 원소 범위 피해</c>를 준다.",
+        "칼 바람이 불어와 「바람 부는 가을 들판」이라는 이름의 영역을 남기고 해당 영역에 있는 적에게 간헐적으로 <c=#87F6FD>바람 원소 피해</c>를 준다."
+      ],
+      "elementalBurstCombo": "원소 전환",
+      "elementalBurstCombo_Explained": [
+        "만약 바람 부는 가을 들판 지속 시간 동안에 <c=#87F6FD>불 원소</c>/<c=#87F6FD>물 원소</c>/<c=#87F6FD>번개 원소</c>/<c=#87F6FD>얼음 원소</c>에 닿으면 <c=#87F6FD>불 원소</c>><c=#87F6FD>물 원소</c>><c=#87F6FD>번개 원소</c>><c=#87F6FD>얼음 원소</c>의 우선순위로 상응하는 원소 속성을 획득하고 추가로 해당 속성 피해를 준다.",
+        "원소 전환은 스킬을 시전하는 동안 1회만 발생한다.",
+        "",
+        "「잠시 동안 만세를 바라보니, 잎새만 봐도 가을이 온 것을 알 수 있네. 단풍잎을 베고 싶다고 세상의 질문에 답을 했네ㅡ」"
+      ],
+      "lv20": "고유특성20: 상문 검법",
+      "lv20_Explained": "<c=#FFE48F>치하야부루</c> 발동 시 <c=#87F6FD>불 원소</c>/<c=#87F6FD>물 원소</c>/<c=#87F6FD>번개 원소</c>/<c=#87F6FD>얼음 원소</c>에 닿으면 <c=#87F6FD>불 원소</c>><c=#87F6FD>물 원소</c>><c=#87F6FD>번개 원소</c>><c=#87F6FD>얼음 원소</c>의 우선순위로 <c=#FFE48F>치하야부루</c>의 낙하 공격·폭풍 베기에 원소 전환이 발생하고 추가로 공격력 200%만큼의 해당 원소 피해^^를 준다. 해당 피해는 낙하 공격 피해^^로 간주한다. 매번 <c=#FFE48F>치하야부루</c>의 스킬 효과에서 원소 전환은 단 한 번만 발생한다.",
+      "lv70": "고유특성70: 바람 속 시 낭송",
+      "lv70_Explained": [
+        "카에데하라 카즈하가 확산 반응을 일으키면 카에데하라 카즈하의 원소 마스터리 1pt당 파티 내 모든 캐릭터에게 확산 반응에 해당하는 원소 피해 보너스^^를 0.04% 제공한다.",
+        "지속 시간: 8초",
+        "이러한 방법으로 획득한 여러 원소 피해 보너스는 공존할 수 있다."
+      ], 
+      "lv0": "고유특성: 안개 낀 솔바람",
+      "lv0_Explained": [
+        "파티 내 자신의 캐릭터의 대시 시 소모하는 스태미나가 20% 감소한다.",
+        "같은 효과의 고유 특성과 중첩되지 않는다."
+      ],
+      "C1_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Scarlet_Hills.png",
+      "C2_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Yamaarashi_Tailwind.png",
+      "C3_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Maple_Monogatari.png",
+      "C4_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Oozora_Genpou.png",
+      "C5_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Wisdom_of_Bansei.png",
+      "C6_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Crimson_Momiji.png",
+      "C1": "제1단계 · 붉게 물든 산",
+      "C1_Explained": [
+        "<c=#FFE48F>치하야부루</c>의 재사용 대기시간이 10% 감소한다.",
+        "<c=#FFE48F>카즈하의 일도</c>를 발동하면 <c=#FFE48F>치하야부루</c>의 재사용 대기시간이 초기화된다."
+      ],
+      "C2": "제2단계 · 산바람의 잔심",
+      "C2_Explained": [
+        "<c=#FFE48F>카즈하의 일도</c> 바람 부는 가을 들판의 효과:",
+        "- 지속 시간 내에 카에데하라 카즈하의 원소 마스터리^^가 200pt 증가한다.",
+        "- 필드 상의 캐릭터 원소 마스터리가 200pt 증가한다.",
+        "",
+        "해당 운명의 자리로 인한 원소 마스터리 버프 효과^^는 중첩되지 않는다."
+      ],
+      "C3": "제3단계 · 단풍 소매 기담",
+      "C3_Explained": [
+        "<c=#FFE48F>치하야부루</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 대공환법",
+      "C4_Explained": [
+        "카에데하라 카즈하의 원소 에너지가 45pt이하일 경우 아래와 같은 효과가 있다:",
+        "- 짧은 터치와 홀드로 <c=#FFE48F>치하야부루</c>를 발동할 시 카에데하라 카즈하의 원소 에너지는 각각 3, 4pt가 회복된다.",
+        "- 카에데하라 카즈하는 활강 상태일 때 원소 에너지를 1초마다 2pt씩 회복한다."
+      ],
+      "C5": "제5단계 · 만세집",
+      "C5_Explained": [
+        "<c=#FFE48F>카즈하의 일도</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 심홍의 단풍",
+      "C6_Explained": [
+        "카에데하라 카즈하가 <c=#FFE48F>치하야부루</c> 혹은 <c=#FFE48F>카즈하의 일도</c>를 발동한 후 5초 동안 <c=#87F6FD>바람 원소 부여 효과</c>를 얻는다.",
+        "또한 카에데하라 카즈하의 원소 마스터리 포인트로 평타, 강공격, 낙하 공격^^이 가하는 피해가 0.2% 증가한다."
+      ]
+    },
+    "mona": {
+      "name": "모나",
+      "title": "별하늘의 물거울",
+      "normalAttacks": "일반 공격: 인과 간파",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "물보라로 최대 4번 공격해 <c=#87F6FD>물 원소 피해</c>를 준다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해, 짧은 영창 후 <c=#87F6FD>물 원소 범위 피해</c>를 준다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 물의 힘을 모은 후 지면을 강타해 경로상의 적을 공격하고 착지 시 <c=#87F6FD>물 원소 범위 피해</c>를 준다.",
+      "elementalSkill": "원소 스킬: 수중 환원",
+      "elementalSkill_Explained": [
+        "몰보라가 모여 만든 운명의 허영",
+        "필드 위에 수중 환원으로 만들어진 허영은 동시에 1개만 존재할 수 있다."
+      ],
+      "elementalSkillSummon": "허영",
+      "elementalSkillSummon_Explained": [
+        "아래의 특성을 가진다:",
+        "- 주변의 적을 도발하여 공격을 유도한다.",
+        "- 주변의 적에게 지속해서 <c=#87F6FD>물 원소 피해</c>를 준다.",
+        "- 지속 시간이 끝나면 허영이 파열되면서 <c=#87F6FD>물 원소 범위 피해</c>를 준다."
+      ],
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "물의 흐름을 이용해 빠르게 후퇴하며 허영을 소환한다.",
+        "",
+        "조예가 깊은 점성술사는 항상 자신의 허영에 다가올 액운을 전가하려 해왔다. 그러나 티바트 대륙에서 이토록 액운을 비웃는 자는 모나가 처음일지도 모른다"
+      ],
+      "elementalDash": "흐르는 허와 실",
+      "elementalDash_Explained": "",
+      "elementalDashAlter": "대시를 대체한다",
+      "elementalDashAlter_Explained": [
+        "흐르는 물에 몸을 숨긴 후 스태미나를 소모해 빠른 속도로 이동한다.",
+        "",
+        "<c=#FFE48F>흐르는 허와 실</c> 상태에서 모나는 수면 위를 빠르게 이동할 수 있다.",
+        "<c=#FFE48F>흐르는 허와 실</c> 상태를 종료 후 몸을 드러내는 순간 주변의 적에게 <c=#87F6FD>습기 상태</c>를 부여한다.",
+        "",
+        "모나가 할 수 있지만, 그녀의 스승은 할 수 없는 일이다. 이건 물 원소 신의 눈과는 상관없다. 왜냐하면 그녀의 선생님은 공부를 강요당하지 않았기 때문이다."
+      ],
+      "elementalBurst": "원소 폭발: 별의 운명",
+      "elementalBurst_Explained": "맑고 청아한 물결에 환상의 별하늘을 비춰 넓은 범위 내의 적을 포영 상태로 만든다.",
+      "elementalBurstCurse": "포영",
+      "elementalBurstCurse_Explained": [
+        "점성의 거품으로 적을 감싸고 <c=#87F6FD>습기</c> 효과를 부여한다. 약한 적들은 거품 속에 갇혀 움직일 수 없다.",
+        "포영 상태의 적에게 피해를 주면 아래의 효과가 발생한다:",
+        "- 적에게 성이(星異) 피해 보너스^^를 부여하며 이번에 가한 피해가 증가한다.",
+        "- 포영 효과가 해제되고 추가로 <c=#87F6FD>물 원소 피해</c>를 1번 준다."
+      ],
+      "elementalBurstCurse2": "성이(星異)",
+      "elementalBurstCurse2_Explained": [
+        "지속 시간 동안 받는 피해가 증가한다.",
+        "",
+        "신의 시선이 천공의 빛을 인도할 때부터 운명은 운명으로 불리게 됐다."
+      ],
+      "lv20": "고유특성20: 「할망구, 나 잡아 봐라!」",
+      "lv20_Explained": [
+        "<c=#FFE48F>흐르는 허와 실</c> 상태에 진입 후 2초 동안 만약 주변에 적이 존재하면 자동으로 허영을 하나 만들어낸다.",
+        "이러한 방식으로 생성된 허영은 2초 동안 지속되며 터지면서 가하는 피해는 <c=#FFE48F>수중 환원</c> 피해의 50%이다."
+      ],
+      "lv70": "고유특성70: 「운명에 맡겨!」",
+      "lv70_Explained": "모나의 <c=#87F6FD>물 원소 피해 보너스</c>가 추가로 모나 원소 충전 효율의 20%만큼 상승한다.",
+      "lv0": "고유특성: 운행 원리",
+      "lv0_Explained": "무기 돌파 소재 합성 시 25%의 확률로 일부 합성 재료를 반환한다.",
+      "C1_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Prophecy_of_Submersion.png",
+      "C2_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Lunar_Chain.png",
+      "C3_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Restless_Revolution.png",
+      "C4_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Prophecy_of_Oblivion.png",
+      "C5_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Mockery_of_Fortuna.png",
+      "C6_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Rhetorics_of_Calamitas.png",
+      "C1": "제1단계 · 침몰한 예언",
+      "C1_Explained": [
+        "파티 내 자신의 캐릭터가 성이 상태의 적을 명중하면 8초 동안 <c=#87F6FD>물 원소 관련 반응</c>의 효과가 상승한다:",
+        "- 감전 반응으로 가하는 피해+15%, 증발 반응으로 가하는 피해+15%, 물 원소 확산 반응으로 가하는 피해+15%",
+        "- 빙결 반응 지속 시간+15%"
+      ],
+      "C2": "제2단계 · 성월의 연주",
+      "C2_Explained":  [
+        "일반 공격^^ 명중 시 20%의 확률로 강공격^^을 1회 추가 발동한다.",
+        "해당 효과는 5초마다 1회 발동한다."
+      ],
+      "C3": "제3단계 · 멈추지 않는 천상",
+      "C3_Explained": [
+        "<c=#FFE48F>별의 운명</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 절멸의 예언",
+      "C4_Explained": "파티 내 모든 캐릭터가 성이 상태의 적을 공격 시 치명타 확률^^이 15% 증가한다.",
+      "C5": "제5단계 · 운명의 우롱",
+      "C5_Explained": [
+        "<c=#FFE48F>수중 환원</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 악운의 수식",
+      "C6_Explained": [
+        "<c=#FFE48F>흐르는 허와 실</c>상태에 진입 후 1초 이동할 때마다 모나의 다음 강공격^^ 피해가 최대 180%까지 증가할 수 있다.",
+        "최대 지속 시간: 8초"
+      ]
+    },
+    "eula": {
+      "name": "유라",
+      "title": "물보라의 춤",
+      "normalAttacks": "일반 공격: 페보니우스 검술·왕실",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": [
+        "스태미나를 지속해서 소모해 빠른 속도로 <c=#FFE48F>연속 베기</c>를 발동한다.",
+        "강공격 종료 시 추가로 검을 한 번 더 강력하게 휘두른다."
+      ],
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 얼음 파도의 와류",
+      "elementalSkill_Explained": "얼음과 같은 한기, 날렵한 검무.",
+      "elementalSkillClick": "짧은 터치",
+      "elementalSkillClick_Explained": [
+        "검을 빠르게 휘둘러 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+        "적을 명중하면 유라는 <c=#FFE48F>냉혹한 마음</c> 효과를 1스택 얻는다.",
+        "최대 중첩수: 2회. 0.3초마다 1스택이 쌓인다."
+      ],
+      "elementalSkillStance": "냉혹한 마음",
+      "elementalSkillStance_Explained": "유라의 경직 저항력과 방어력이 상승한다.",
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "<c=#FFE48F>냉혹한 마음</c> 효과를 모두 소모하고 대검을 앞으로 휘둘러 전방의 적에게 <c=#87F6FD>얼음 원소 범위 피해</c>를 준다.",
+        "<c=#FFE48F>냉혹한 마음</c> 효과를 소모하면, 주변에 있는 적의 물리 내성과 <c=#87F6FD>얼음 원소 내성</c>이 감소한다.",
+        "소모된 <c=#FFE48F>냉혹한 마음</c>은 스택당 얼음 소용돌이의 검 한 자루로 전환되어 주변의 적에게 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+        "",
+        "「그렇게 소용돌이치던 파도는 고귀한 왕관을 집어삼켰다. 그리고 차가운 물결엔 황금빛 왕관이, 물거품엔 눈 부신 빛이 반짝였다」"
+      ],
+      "elementalBurst": "원소 폭발: 파도를 얼리는 광검",
+      "elementalBurst_Explained": [
+        "맹렬하게 대검을 휘둘러 주변의 적에게 <c=#87F6FD>얼음 원소 피해</c>를 주며, 유라를 따르는 빛의 검을 만들어 낸다.",
+        "빛의 검 지속 시간: 최대 7초",
+        "지속 시간 동안 빛의 검은 유라의 경직 저항력^^을 높이고, 유라가 일반 공격, 원소 스킬 혹은 원소 폭발^^로 피해를 줄 때 빛의 검 에너지가 쌓인다. 에너지는 0.1초마다 1스택만 쌓인다.",
+        "지속 시간이 끝나면 빛의 검은 추락한 뒤 폭발해 주변의 적에게 물리 피해^^를 준다.",
+        "해당 피해는 빛의 검에 쌓인 에너지 스택에 의해 결정된다.",
+        "유라가 퇴장할 때 빛의 검은 바로 폭발한다. 유라가 사망 시 빛의 검은 폭발하지 않고 사라진다.",
+        "",
+        "몰락하는 건 아주 쉬운 일이지만, 그럼에도 그녀는 이 격류를 얼리고 싶어 한다"
+      ],
+      "lv20": "고유특성20: 소용돌이치는 서리",
+      "lv20_Explained": [
+        "홀드^^하여 <c=#FFE48F>얼음 파도의 와류</c> 발동 시 한 번에 <c=#FFE48F>냉혹한 마음</c> 효과를 2스택 소모하면, 즉시 폭발하는 부서진 빛의 검이 생성된다.",
+        "이는 <c=#FFE48F>파도를 얼리는 광검</c>으로 생성된 빛의 검 기초 피해 50%에 해당하는 물리 피해^^를 준다."
+      ],
+      "lv70": "고유특성70: 솟구치는 전투의 욕망",
+      "lv70_Explained": "<c=#FFE48F>파도를 얼리는 광검</c> 발동 시, <c=#FFE48F>얼음 파도의 와류</c>의 재사용 대기시간이 초기화되고 유라에게 <c=#FFE48F>냉혹한 마음</c> 효과를 1스택 부여한다.",
+      "lv0": "귀족의 자아성찰",
+      "lv0_Explained": "캐릭터 특성 소재 합성시 10%의 확률로 생산량의 2배를 획득한다.",
+      "C1_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Tidal_Illusion.png",
+      "C2_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Lady_of_Seafoam.png",
+      "C3_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Lawrence_Pedigree.png",
+      "C4_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/The_Obstinacy_of_One's_Inferiors.png",
+      "C5_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Chivalric_Quality.png",
+      "C6_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Noble_Obligation.png",
+      "C1": "제1단계 · 빛의 환상",
+      "C1_Explained": [
+        "<c=#FFE48F>얼음 파도의 와류</c>의 <c=#FFE48F>냉혹한 마음</c> 효과를 소모하면, 유라의 물리 피해 보너스^^가 30% 증가한다.",
+        "지속 시간: 6초",
+        "<c=#FFE48F>냉혹한 마음</c>을 1스택 소모할 때마다 해당 효과의 지속 시간이 6초 증가하며, 최대 18초까지 증가한다."
+      ],
+      "C2": "제2단계 · 물보라 소녀",
+      "C2_Explained": "<c=#FFE48F>얼음 파도의 와류</c> 홀드 재사용 대기시간이 짧은 터치 재사용 대기 시간과 같아진다.(10초 -> 4초)",
+      "C3": "제3단계 · 로렌스의 혈통",
+      "C3_Explained": [
+        "<c=#FFE48F>파도를 얼리는 광검</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 열등감 속 고집",
+      "C4_Explained": "HP가 50% 미만인 적에게 빛의 검으로 가하는 피해가 25% 증가한다.",
+      "C5": "제5단계 · 기사의 소양",
+      "C5_Explained": [
+        "<c=#FFE48F>얼음 파도의 와류</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 살생의 발걸음",
+      "C6_Explained": [
+        "<c=#FFE48F>파도를 얼리는 광검</c>에 의해 생성된 빛의 검은 즉시 에너지를 5pt 획득한다.",
+        "일반 공격, 원소 스킬, 혹은 원소 폭발로 적에게 피해를 줘서 에너지 스택을 쌓으면 50%의 확률로 1스택이 더 쌓인다."
+      ]
+    },
+    "zhongli": {
+      "name": "종려",
+      "title": "속세 한유",
+      "normalAttacks": "일반 공격: 바위 비",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "창으로 최대 6번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 전방으로 질주한다. 경로 및 종착점에 <c=#FFE48F>비 같은 바위창</c>을 내린다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 지핵",
+      "elementalSkill_Explained": "대지 위, 산맥, 반석 사이엔 바위의 힘이 널리 퍼져있다. 그러나 이 힘을 자유자재로 사용할 수 있는 이는 거의 없다.",
+      "elementalSkillClick": "짧은 터치",
+      "elementalSkillClick_Explained": "대지에 퍼져있는 바위 원소를 소환해 암주를 생성한다.",
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "근처의 바위 원소를 폭발시켜 아래 효과를 생성한다:",
+        "- 암주의 수량이 최대 수량에 미치지 못하면 암주를 생성해 낸다.",
+        "- 옥홀 방패를 생성한다. 피해 흡수량은 종려 HP 최대치의 영향을 받는다.",
+        "- <c=#87F6FD>바위 원소 범위 피해</c>를 준다.",
+        "- 근처에 바위 원소를 보유한 타깃이 있다면, 최대 2개 타깃의 바위 원소를 대량 소모한다. 해당 효과는 피해를 줄 수 없다."
+      ],
+      "elementalSkillSummon": "암주",
+      "elementalSkillSummon_Explained": [
+        "생성 시, <c=#87F6FD>바위 원소 범위 피해</c>를 준다.",
+        "또한 암주는 주변의 다른 바위 원소 창조물과 2초에 한 번 원암 공명을 일으켜 주변의 적에게 <c=#87F6FD>바위 원소 피해</c>를 준다.(서로 다른 암주의 공명은 독립 시행이다.)",
+        "암주는 바위 원소 창조물로 간주되며, 공격을 막거나 등반할 수 있다.",
+        "종려가 만들어낸 암주는 동시에 1개만 존재할 수 있다."
+      ],
+      "elementalSkillShield": "옥홀 방패",
+      "elementalSkillShield_Explained": [
+        "모든 원소 피해와 물리 피해에 대해 150%의 <c=#FFE48F>흡수 효과</c>가 있다.",
+        "옥홀 방패로 보호를 받고 있는 캐릭터는, 주변의 좁은 범위 내 적들의 원소 내성과 물리 내성을 20% 감소시킨다. 이 효과는 중첩되지 않는다.",
+        "",
+        "바위는 평범해 보이지만 옥을 갈고 금에 모양을 새길 수도 있을 만큼 단단하다"
+      ],
+      "elementalBurst": "원소 폭발: 천성",
+      "elementalBurst_Explained": "거대한 운석을 떨어뜨려 추락 범위 내의 적에게 대량의 <c=#87F6FD>바위 원소 피해</c>를 주고 <c=#FFE48F>석화</c> 상태로 만든다.",
+      "elementalBurstCurse": "석화",
+      "elementalBurstCurse_Explained": [
+        "<c=#FFE48F>석화</c> 상태가 된 적은 움직일 수 없다.",
+        "",
+        "하늘의 운석을 떨어뜨려 운명의 어둠을 밝게 비춘다."
+      ],
+      "lv20": "고유특성20: 낭떠러지의 재결",
+      "lv20_Explained": [
+        "옥홀 방패가 피해를 받으면 철벽 효과가 발동한다.",
+        "- 옥홀 방패<의 보호를 받는 캐릭터의 보호막 강화 효과가 5% 증가한다.",
+        "- 해당 효과 최대 중첩 수: 5회. 효과는 옥홀 방패가 사라지기 전까지 지속된다."
+      ],
+      "lv70": "고유특성70: 호의호식",
+      "lv70_Explained": [
+        "HP의 최대치에 영향을 받아, 종려가 가하는 공격의 피해가 증가한다.",
+        "- <c=#FFE48F>평타</c>, <c=#FFE48F>강공격</c>, <c=#FFE48F>낙하 공격</c> 피해 증가량: HP 최대치의 1.39%",
+        "- <c=#FFE48F>지핵</c>의 암주, 공명 피해와 홀드 피해 증가량: HP 최대치의 1.9%.",
+        "- <c=#FFE48F>천성</c> 피해 증가량: HP 최대치의 33%"
+      ],
+      "lv0": "고유특성: 수정석의 이치",
+      "lv0_Explained": "장병기 무기 단조 시 소모한 광석을 15% 반환한다.",
+      "C1_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Rock,_the_Backbone_of_Earth.png",
+      "C2_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Stone,_the_Cradle_of_Jade.png",
+      "C3_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Jade,_Shimmering_through_Darkness.png",
+      "C4_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Topaz,_Unbreakable_and_Fearless.png",
+      "C5_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Lazuli,_Herald_of_the_Order.png",
+      "C6_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Chrysos,_Bounty_of_Dominator.png",
+      "C1": "제1단계 · 암석·천지의 기반",
+      "C1_Explained": "<c=#FFE48F>지핵</c>으로 만든 암주는 동시에 최대 2개 존재할 수 있다.",
+      "C2": "제2단계 · 돌·옥으로 인해 빛나는 세상",
+      "C2_Explained": "<c=#FFE48F>천성</c>이 떨어질 때 근처에 있는 현재 캐릭터에게 옥홀 방패를 부여한다.",
+      "C3": "제3단계 · 옥그릇·저물어도 사라지지 않는 광채",
+      "C3_Explained": [
+        "<c=#FFE48F>지핵</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 옥홀·부서져도 건재한 견고함",
+      "C4_Explained": [
+        "<c=#FFE48F>천성</c>의 영향 범위가 20% 증가한다.",
+        "또한, <c=#FFE48F>천성</c>의 <c=#FFE48F>석화</c> 효과 지속 시간이 2초 증가한다."
+      ],
+      "C5": "제5단계 · 푸른 규벽·천지의 이치",
+      "C5_Explained": [
+        "<c=#FFE48F>천성</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 금옥·천하에 주는 선물",
+      "C6_Explained": [
+        "옥홀 방패가 피해를 받을 경우, 받은 피해의 40%만큼 현재 캐릭터의 HP를 회복한다.",
+        "단일 회복량은 현재 캐릭터 HP 최대치의 8%를 초과할 수 없다."
+      ]
+    },
+    "xingqiu": {
+      "name": "행추",
+      "title": "의기충천",
+      "normalAttacks": "일반 공격: 고화 검법",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 순간적으로 전방을 향해 검을 2번 휘두른다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고, 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 고화검·화우농산",
+      "elementalSkill_Explained": "연속으로 검을 두 번 휘둘러 전방의 적에게 <c=#87F6FD>물 원소 피해</c>를 주고 현재 필드에 있는 캐릭터 주변을 맴도는 최대 수량의 우렴검을 생성한다.",
+      "elementalSkillSummon": "우렴검",
+      "elementalSkillSummon_Explained": [
+        "우렴검은 아래의 특성을 가진다:",
+        "- 캐릭터가 피격 시 우렴검은 파괴되고 받는 피해가 감소한다.",
+        "- 캐릭터의 경직 저항력이 상승한다.",
+        "행추의 <c=#87F6FD>물 원소 피해 보너스</c>의 20%가 우렴검의 추가 피해 감면으로 전환된다.",
+        "이런 방식을 통해 최대 24%의 추가 피해 감면 효과를 획득할 수 있다.",
+        "초기 우렴검은 최대 3개 생성된다.",
+        "발동하는 순간 캐릭터에게 습기 효과를 부여한다.",
+        "",
+        "「교룡 베기는 쉬우나, 빗줄기를 그리긴 어렵다」"
+      ],
+      "elementalBurst": "원소 폭발: 고화검·재우유홍",
+      "elementalBurst_Explained": "홍검세를 펼쳐 환영 검의 비를 만들어내 최대 개수의 「우렴검」을 생성한다.",
+      "elementalBurstCombo": "홍검세",
+      "elementalBurstCombo_Explained": [
+        "- 현재 필드 위에 있는 자신의 캐릭터가 <c=#FFE48F>평타</c> 시 검의 비 연속 공격과 함께 <c=#87F6FD>물 원소 피해</c>를 준다.",
+        "- 「우렴검」의 개수는 항상 최대 개수를 유지한다.",
+        "",
+        "「재우법(裁雨法)」은 남에게 전수하지 않는 고화파의 절대 비기 중 하나이다"
+      ],
+      "lv20": "고유특성20: 물 창조의 비결",
+      "lv20_Explained": "우렴검이 공격을 받아 부서지거나 지속 시간 종료 시 현재 캐릭터의 HP를 행추 HP 최대치의 6%만큼 회복한다.",
+      "lv70": "고유특성70: 허와 실",
+      "lv70_Explained": "행추가 <c=#87F6FD>물 원소 피해 보너스</c>를 20% 획득한다.",
+      "lv0": "고유특성: 번뜩이는 영감",
+      "lv0_Explained": "캐릭터 특성 소재 합성 시 25%의 확률로 일부 합성 재료를 반환한다.",
+      "C1_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/The_Scent_Remained.png",
+      "C2_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Rainbow_Upon_the_Azure_Sky.png",
+      "C3_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Weaver_of_Verses.png",
+      "C4_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Evilsoother.png",
+      "C5_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Embrace_of_Rain.png",
+      "C6_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Hence,_Call_Them_My_Own_Verses.png",
+      "C1": "제1단계 · 장막의 잔향",
+      "C1_Explained": "우렴검의 최대 수량이 1개 증가한다.",
+      "C2": "제2단계 · 맑은 하늘의 무지개",
+      "C2_Explained": [
+        "<c=#FFE48F>고화검·재우유홍</c>의 지속시간이 3초 증가한다.",
+        "검의 비 공격을 받은 적은 물 원소 내성이 15% 감소한다. 지속 시간: 4초"
+      ],
+      "C3": "제3단계 · 시로 짠 비단",
+      "C3_Explained": [
+        "<c=#FFE48F>고화검·재우유홍</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 교룡 베기",
+      "C4_Explained": "<c=#FFE48F>고화검·재우유홍</c>효과가 지속 되는 동안 <c=#FFE48F>고화검·화우농산</c>으로 가하는 피해가 50% 증가한다.",
+      "C5": "제5단계 · 우심폐문",
+      "C5_Explained": [
+        "<c=#FFE48F>고화검·화우농산</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 만문 집결",
+      "C6_Explained": "<c=#FFE48F>고화검·재우유홍</c> 검의 비 공격을 2회 발동할 때마다 다음 검의 비 공격을 대폭 강화하고 적을 명중 시 행추의 원소 에너지를 3pt 회복한다."
+    },
+    "bennett": {
+      "name": "베넷",
+      "title": "운명의 시금석",
+      "normalAttacks": "일반 공격: 행운의 검",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 순간적으로 전방을 향해 검을 2번 휘두른다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고, 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 열정 과부하",
+      "elementalSkill_Explained": "베넷이 불의 원소와 모험의 열정을 검의 끝에 모은다. 열정이 모인 정도에 따라 다른 일이 발생할지도 모른다.",
+      "elementalSkillClick": "짧은 터치",
+      "elementalSkillClick_Explained": "빠른 속도로 전방을 향해 화염의 일격을 가해 <c=#87F6FD>불 원소 피해</c>를 준다.",
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "길게 차지하며 차지 단수에 따라 다른 효과가 발동된다.",
+        "- 1단 차지: 2단 공격을 발동해 <c=#87F6FD>불 원소 피해</c>를 가하고 적을 공중에 띄운다.",
+        "- 2단 차지: 3단 공격을 발동해 대량의 <c=#87F6FD>불 원소 피해</c>를 준다. 최후의 일격은 폭발을 일으키며 베넷과 적을 동시에 공중에 띄운다. 이때 베넷은 피해를 받지 않는다.",
+        "",
+        "베넷이 열정과 꿈, 그리고 불 원소를 담은 일격을 가한다. 하지만 열정이 너무 과할 때가 있듯, 불 원소도 폭발할 때가 있다"
+      ],
+      "elementalBurst": "원소 폭발: 아름다운 여정",
+      "elementalBurst_Explained": "베넷이 도약 공격을 가하며 <c=#87F6FD>불 원소 피해</c>를 주고 격려의 영역을 만들어낸다.",
+      "elementalBurstField": "격려의 영역",
+      "elementalBurstField_Explained": [
+        "- 영역 내 캐릭터의 HP가 70% 이하일 때, HP를 지속해서 회복한다. 회복량은 베넷 HP 최대치의 영향을 받는다.",
+        "- 영역 내 캐릭터의 HP가 70%를 초과할 때, 베넷의 기초 공격력에 기반하여 일정 비율의 <c=#FFE48F>공격력 보너스</c>를 획득한다.",
+        "- 영역 내의 캐릭터에게 불 원소를 부착한다.",
+        "",
+        "베니 모험단은 탐험할 때마다 예상외의 위험에 봉착한다. 비록 유일한 단원인 베넷은 이걸 「재미있고, 흥분되며 아름다운 여정」이라고 말하지만 말이다"
+      ],
+      "lv20": "고유특성20: 되살아난 열정",
+      "lv20_Explained": "<c=#FFE48F>열정 과부하</c>의 재사용 대기시간이 20% 감소한다.",
+      "lv70": "고유특성70: 두려움 없는 뜨거운 피",
+      "lv70_Explained": [
+        "<c=#FFE48F>아름다운 여정</c>의 영역 내에서 <c=#FFE48F>열정 과부하</c>는 아래의 효과가 발동한다:",
+        "- 재사용 대기시간이 50% 감소한다.",
+        "- 2단 차지로 인해 자신이 날려지지 않는다."
+      ],
+      "lv0": "고유특성: 안전하겠지",
+      "lv0_Explained": "몬드에서 탐색 임무 수행 시 소모하는 시간이 25% 감소한다.",
+      "C1_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Grand_Expectation.png",
+      "C2_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Impasse_Conqueror.png",
+      "C3_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Unstoppable_Fervor.png",
+      "C4_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Unexpected_Odyssey.png",
+      "C5_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/True_Explorer.png",
+      "C6_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Fire_Ventures_with_Me.png",
+      "C1": "제1단계 · 모험 동경",
+      "C1_Explained": "<c=#FFE48F>아름다운 여정</c>의 공격력 증가 효과는 더이상 HP의 제한을 받지 않고 공격력 수치에 베넷 기초 공격력의 20%가 추가된다.",
+      "C2": "제2단계 · 궁지 돌파",
+      "C2_Explained": "베넷의 HP가 70% 미만일 때 원소 충전 효율이 30% 상승한다.",
+      "C3": "제3단계 · 타오르는 열정",
+      "C3_Explained": [
+        "<c=#FFE48F>열정 과부하</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 사그러들지 않는 열정",
+      "C4_Explained": [
+        "1단 자치로 <c=#FFE48F>열정 과부하</c> 발동 시 스킬의 2단 공격 중 일반 공격을 발동하면 추가 공격을 할 수 있다.",
+        "추가 공격 피해는 2단 공격의 135%이다."
+      ],
+      "C5": "제5단계 · 넓어진 마음",
+      "C5_Explained": [
+        "<c=#FFE48F>아름다운 여정</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 열화와 용기",
+      "C6_Explained": "<c=#FFE48F>아름다운 여정</c> 영역 내에 있는 한손검, 양손검, 장병기 무기 캐릭터는 <c=#87F6FD>불 원소 피해 보너스</c>를 15% 획득하고 불 원소 부여 효과를 얻는다."
+    },
+    "hutao": {
+      "name": "호두",
+      "title": "눈 그친 뒤의 매화향",
+      "normalAttacks": "일반 공격: 왕생 비버 창술",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "창으로 최대 6번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 전방으로 돌진하며 경로상의 적에게 피해를 준다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 나비의 서",
+      "elementalSkill_Explained": [
+        "소멸하지 않는 화염만이 세상의 불결한 것을 정화할 수 있다.",
+        "호두는 일정량의 HP를 소모해 주변의 적을 넉백시키고 피안접무 상태로 들어간다."
+      ],
+      "elementalSkillStance": "피안접무",
+      "elementalSkillStance_Explained": [
+        "- 상태 진입 시 호두의 HP 최대치에 기반하여 공격력이 증가한다. 이러한 공격력 증가는 호두 기초 공격력의 400%를 넘을 수 없다.",
+        "- <c=#FFE48F>일반 공격</c>이 <c=#FFA3A3>불 원소 피해</c>로 전환되며, 해당 원소 전환은 다른 원소 부여 효과로 대체될 수 없다.",
+        "- 강공격은 명중된 적에게 혈매향 효과를 부여한다.",
+        "- 호두의 경직 저항력이 상승한다.",
+        "<c=#FFE48F>피안접무</c>의 효과는 지속 시간이 끝나거나, 호두가 퇴장 혹은 전투 불능 상태가 되었을 때 사라진다."
+      ],
+      "colorize": "#FFE48F",
+      "elementalSkillCurse": "혈매향",
+      "elementalSkillCurse_Explained": [
+        "혈매향 상태의 적은 4초마다 한 번씩 <c=#FFA3A3>불 원소 피해</c>를 받는다. 해당 피해는 원소전투 스킬 피해로 취급한다.",
+        "타깃 하나당 혈매향 효과는 1개만 존재할 수 있고, 효과의 지속 시간은 호두에 의해서만 리셋된다.",
+        "",
+        "호두가 배운 비법 창술, 그 가르침의 첫 구절은 이러하다: 「창으로 저승길 문을 열고, 나비를 따라 삼도천을 건너네」"
+      ],
+      "elementalBurst": "원소 폭발: 평안의 서",
+      "elementalBurst_Explained": [
+        "타오르는 유령을 휘둘러 넓은 범위의 <c=#FFA3A3>불 원소 범위 피해</c>를 준다.",
+        "적에게 명중 시 호두의 HP 최대치에 기반하여 호두의 HP를 회복한다. 해당 효과는 최대 5명의 명중된 적에게서 효과를 볼 수 있다.",
+        "스킬 명중 시 호두의 HP가 50% 이하라면, 가하는 피해와 치유량이 더 높아진다.",
+        "",
+        "이미 세상을 떠난 존재가 이 세상에 버젓이 남아있다면, 왕생당은 애가 탄다. 화장(火葬)은 호두를 안심시킬 수 있는 가장 좋은 방법이다. 그녀가 초조해 할수록 화력은 더욱 거세질 것이다."
+      ],
+      "lv20": "고유특성20: 모습을 감춘 나비",
+      "lv20_Explained": "<c=#FFE48F>나비의 서</c>가 부여하는 <c=#FFE48F>피안접무</c> 상태가 끝난 후, 파티 내 모든 캐릭터(호두 자신은 제외)의 치명타 확률이 12% 증가한다. 지속시간 : 8초",
+      "lv70": "고유특성70: 핏빛 분장",
+      "lv70_Explained": "호두의 HP가 50% 이하일 때, 33%의 <c=#FFA3A3>불 원소 피해 보너스</c>를 획득한다.",
+      "lv0": "고유특성: 다다익선",
+      "lv0_Explained": "요리를 완벽 조리하면 18%의 확률로 같은 종류의 「이상한」 품질의 요리를 1개 획득한다",
+      "C1_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Crimson_Bouquet.png",
+      "C2_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Ominous_Rainfall.png",
+      "C3_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Lingering_Carmine.png",
+      "C4_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Garden_of_Eternal_Rest.png",
+      "C5_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Floral_Incense.png",
+      "C6_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Butterfly's_Embrace.png",
+      "C1": "제1단계 · 진홍의 꽃다발",
+      "C1_Explained": "<c=#FFE48F>나비의 서</c>가 부여한 <c=#FFE48F>피안접무</c> 상태일 때, 호두의 강공격은 스태미나를 소모하지 않는다.",
+      "C2": "제2단계 · 비처럼 내리는 불안",
+      "C2_Explained": [
+        "<c=#FFE48F>혈매향</c>이 가하는 피해가 증가한다. 피해 증가량은 효과 부여 시, 호두 HP 최대치의 10%이다.",
+        "또한, <c=#FFE48F>평안의 서</c>는 명중 시 적에게 <c=#FFE48F>혈매향</c> 효과를 부여한다"
+      ],
+      "C3": "제3단계 · 적색 피의 의식",
+      "C3_Explained": [
+        "<c=#FFE48F>나비의 서</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 영원한 안식의 정원",
+      "C4_Explained": "호두가 부여한 <c=#FFE48F>혈매향</c> 효과 상태의 적 처치 시, 주변의 파티 내 캐릭터(호두 자신은 제외)의 치명타 확률이 12% 증가한다. 지속 시간: 15초",
+      "C5": "제5단계 · 꽃잎 향초의 기도",
+      "C5_Explained": [
+        "<c=#FFE48F>평안의 서</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 나비 잔향",
+      "C6_Explained": [
+        "호두의 HP가 25% 이하로 떨어지거나 전투 불능이 될 정도의 피해를 입으면 아래 효과가 발동된다:",
+        "호두는 해당 피해로 전투 불능 상태에 빠지지 않고 다음 10초 동안 호두의 모든 원소 내성과 물리 내성이 200% 증가한다. 동시에 치명타 확률이 100% 증가하고, 경직 저항력이 대폭 상승한다.",
+        "해당 효과는 호두의 HP가 1일 때 자동으로 발동된다.",
+        "해당 효과는 60초마다 1번 발동한다."
+      ]
+    },
+    "diona": {
+      "name": "디오나",
+      "title": "캐츠라인 칵테일",
+      "normalAttacks": "일반 공격: 사냥꾼의 사격술",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "활로 최대 5번 공격한다.",
+      "chargedAttack": "조준 사격",
+      "chargedAttack_Explained": [
+        "피해가 더 크고 정확한 <c=#FFE48F>조준 사격</c>을 한다.",
+        "조준 시 차가운 한기가 화살 촉에 모인다. 한기로 가득 찬 화살은 <c=#87F6FD>얼음 원소 피해</c>를 준다."
+      ],
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 화살비를 쏜 후 빠른 속도로 땅에 착지한다. 땅에 닿으면 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 꽁꽁젤리",
+      "elementalSkill_Explained": [
+        "꽁꽁젤리를 발사해 적에게 <c=#87F6FD>얼음 원소 피해</c>를 주고 스킬 시전 시 보호막을 생성한다.",
+        "보호막의 피해 흡수량은 디오나 HP 최대치의 영향을 받고 지속 시간은 발사한 꽁꽁젤리 개수에 영향을 받는다."
+      ],
+      "elementalSkillClick": "짧은 터치",
+      "elementalSkillClick_Explained": "빠른 속도로 꽁꽁젤리를 2개 발사한다.",
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "빠른 속도로 뒤로 물러선 후 꽁꽁젤리를 5개 발사한다.",
+        "홀드로 생성된 보호막은 75%의 흡수량 보너스를 획득한다.",
+        "보호막은 얼음 원소 피해에 대해 250%의 흡수 효과가 있고 생성 시 현재 캐릭터에게 얼음 원소를 잠깐 부착한다.",
+        "",
+        "처음엔 술에 얼음을 아무리 넣어도 주정뱅이들을 혼쭐 내 줄 수 없었다. 하지만 디오나가 신의 눈을 얻으면서 그들의 관자놀이를 욱신거리게 만드는 이 꽁꽁젤리를 얻을 수 있게 됐다. 굿굿!"
+      ],
+      "elementalBurst": "원소 폭발: 특제 칵테일",
+      "elementalBurst_Explained": "독한 특제 얼음 칵테일을 던져 <c=#87F6FD>얼음 원소 범위 피해</c>를 주고 서리 술안개 영역을 만든다.",
+      "elementalBurstField": "서리 술안개 영역",
+      "elementalBurstField_Explained": [
+        "- 영역 내의 적은 <c=#87F6FD>얼음 원소 지속 피해</c>를 받는다.",
+        "- 영역 내의 캐릭터는 HP를 지속해서 회복한다.",
+        "",
+        "디오나마저 손사래를 치는 비인도적 레시피로 첫맛이 끔찍해 적에게 줄 것을 추천한다. 뒷맛은 산뜻하고 시원하나 코와 피부로만 느낄 수 있다"
+      ],
+      "lv20": "고유특성20: 캣테일 히든 메뉴",
+      "lv20_Explained": "<c=#FFE48F>꽁꽁젤리</c> 보호막의 보호를 받고 있는 캐릭터는 이동속도가 10% 증가하고 스태미나 소모량이 10% 감소한다.",
+      "lv70": "고유특성70: 우스꽝스러운 취태",
+      "lv70_Explained": "적이 <c=#FFE48F>특제 칵테일</c> 영역에 진입하면 15초 동안 공격력이 10% 감소한다.",
+      "lv0": "고유특성: 무료 안주",
+      "lv0_Explained": "회복류 요리를 완벽 조리하면 12% 확률로 요리량의 2배를 획득한다.",
+      "C1_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/A_Lingering_Flavor.png",
+      "C2_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Shaken,_Not_Purred.png",
+      "C3_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/A-Another_Round.png",
+      "C4_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Wine_Industry_Slayer.png",
+      "C5_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Double_Shot,_On_The_Rocks.png",
+      "C6_icon": "https://rerollcdn.com/GENSHIN/Skills/2021/Cat's_Tail_Closing_Time.png",
+      "C1": "제1단계 · 칵테일의 여운",
+      "C1_Explained": "<c=#FFE48F>특제 칵테일</c>의 효과 종료 후 디오나의 원소 에너지를 15pt 회복한다.",
+      "C2": "제2단계 · 꽁꽁젤리 쉐이큰",
+      "C2_Explained": [
+        "<c=#FFE48F>꽁꽁젤리</c>로 가하는 피해가 15% 증가하고 보호막 피해 흡수량이 15% 증가한다.",
+        "또한, <c=#FFE48F>꽁꽁젤리</c> 명중 시 필드 주변의 다른 캐릭터에게도 피해 흡수량이 <c=#FFE48F>꽁꽁젤리</c>의 50%인 보호막이 생성된다. 지속 시간: 5초"
+      ],
+      "C3": "제3단계 · 한, 한 잔 더?",
+      "C3_Explained": [
+        "<c=#FFE48F>특제 칵테일</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 주류업 킬러",
+      "C4_Explained": "<c=#FFE48F>특제 칵테일</c> 영역 내에서 디오나의 조준 사격 차지 시간이 60% 감소한다.",
+      "C5": "제5단계 · 투 샷, 더블 아이스",
+      "C5_Explained": [
+        "<c=#FFE48F>꽁꽁젤리</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 캣테일 마감시간",
+      "C6_Explained": [
+        "<c=#FFE48F>특제 칵테일</c> 영역 내의 캐릭터는 HP에 따라 아래의 효과를 갖는다:",
+        "- HP 50% 이하: 받는 치유 보너스 +30%",
+        "- HP 50% 초과: <c=#FFE48F>원소 마스터리</c> +200pt"
+      ]
+    },
+    "sucrose": {
+      "name": "설탕",
+      "title": "무해한 달콤함",
+      "normalAttacks": "일반 공격: 약식 풍령 작성",
+      "normalAttacks_Explained": "",
+      "normalAttack": "일반 공격",
+      "normalAttack_Explained": "풍령으로 최대 4번 공격해 <c=#87F6FD>바람 원소 피해</c>를 준다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 짧은 영창 후 <c=#87F6FD>바람 원소 범위 피해</c>를 준다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "풍령의 힘을 모은 후 지면을 강타해 경로상의 적을 공격하고 착지 시 <c=#87F6FD>바람 원소 범위 피해</c>를 준다.",
+      "elementalSkill": "원소 스킬: 풍령 작성·육삼공팔",
+      "elementalSkill_Explained": [
+        "소형 풍령을 소환해 적과 물체를 풍령이 있는 위치로 끌어당긴 후 공중으로 띄우고 <c=#87F6FD>바람 원소 피해</c>를 입힌다.",
+        "",
+        "말하기 쑥스럽지만 실패한 실험에서도 실용적인 기술이 탄생해요. 저의 손에서 탄생한 원소 생명은 쉽게 꺼진다고 하지만 모험에서 분명 도움이 될 거예요"
+      ],
+      "elementalBurst": "원소 폭발: 금기·풍령 작성·칠오 동구 이형",
+      "elementalBurst_Explained": [
+        "설탕이 불안정한 플라스크를 던져 대형의 바람 정령을 생성한다.",
+        "존재하는 동안 대형의 바람 정령은 주변의 적과 물체를 지속해서 끌어당긴 후 공중으로 띄우고 <c=#87F6FD>바람 원소 피해</c>를 준다."
+      ],
+      "elementalBurstCombo": "원소 전환",
+      "elementalBurstCombo_Explained": [
+        "바람 정령 스킬을 시전하는 동안 <c=#87F6FD>불 원소</c>/<c=#87F6FD>물 원소</c>/<c=#87F6FD>번개 원소</c>/<c=#87F6FD>얼음 원소</c>에 닿으면 <c=#87F6FD>불 원소</c>><c=#87F6FD>물 원소</c>><c=#87F6FD>번개 원소</c>><c=#87F6FD>얼음 원소</c>의 우선순위로 상응하는 원소 속성을 획득하고 추가로 해당 속성 피해를 준다.",
+        "원소 전환은 스킬을 시전하는 동안 1회만 발생한다.",
+        "",
+        "설탕은 예전에 불안정 상태의 무상의 바람마다 이름을 붙여주고 싶었다. 그러나 얼마 안 지나 무상의 바람의 대대로 이어져 온 계보가 토끼 백작의 893세를 초과하면서 그 생각을 접었다."
+      ],
+      "lv20": "고유특성20: 촉매 치환술",
+      "lv20_Explained": "설탕이 원소 확산 반응 발동 후 파티 내 모든 대응하는 원소 유형 캐릭터(설탕 자신을 포함하지 않음)의 <c=#FFE48F>원소 마스터리</c>가 50pt 증가한다.",
+      "lv70": "고유특성70: 작은 혜풍",
+      "lv70_Explained": "<c=#FFE48F>풍령 작성·육삼공팔</c> 혹은 <c=#FFE48F>금기·풍령 작성·칠오 동구 이형</c>이 적을 명중하면 설탕의 원소 마스터리의 20%를 기반으로 파티 내 모든 캐릭터(설탕 자신을 포함하지 않음)에게 <c=#FFE48F>원소 마스터리 보너스</c>를 제공한다. 지속 시간: 8초.",
+      "lv0": "고유특성: 불안정한 발견",
+      "lv0_Explained": "캐릭터와 무기 육성 소재를 합성 시 10%의 확률로 생산량의 2배를 획득한다.",
+      "C1": "제1단계 · 쌓아 올린 진공 영역",
+      "C1_Explained": "<c=#FFE48F>풍령 작성·육삼공팔</c>의 사용 가능 횟수가 1회 증가한다.",
+      "C2": "제2단계 · 불속박형 베트",
+      "C2_Explained": "<c=#FFE48F>금기·풍령 작성·칠오 동구 이형</c>의 스킬 지속 시간을 2초 연장한다.",
+      "C3": "제3단계 · 실수하지 않는 소녀",
+      "C3_Explained": [
+        "<c=#FFE48F>풍령 작성·육삼공팔</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 연금의 편집증",
+      "C4_Explained": "설탕이 일반 공격 혹은 강공격을 7번 발동할 때마다 <c=#FFE48F>풍령 작성·육삼공팔</c>의 재사용 대기시간이 랜덤으로 1~7초 감소한다.",
+      "C5": "제5단계 · 진지한 보통병",
+      "C5_Explained": [
+        "<c=#FFE48F>금기·풍령 작성·칠오 동구 이형</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 혼돈의 엔트로피",
+      "C6_Explained": "<c=#FFE48F>금기·풍령 작성·칠오 동구 이형</c>이 원소 전환이 발생하면, 파티 내 모든 캐릭터는 스킬이 지속하는 동안 대응하는 <c=#FFE48F>원소 피해 보너스</c>를 20% 획득한다."
+    },
+    "jean": {
+      "name": "진",
+      "title": "민들레 기사",
+      "normalAttacks": "일반 공격: 페보니우스 검술",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": [
+        "일정 스태미나를 소모해 바람 원소의 힘이 깃들어 있는 <c=#FFE48F>올려베기</c>를 발동한다.",
+        "올려진 적은 천천히 추락한다."
+      ],
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "풍압검",
+      "elementalSkill_Explained": "형체가 없는 바람의 힘을 검에 모아 작은 폭풍을 만들어낸 후 적을 향해 날려 대량의 <c=#87F6FD>바람 원소 피해</c>를 준다.",
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "지속해서 스태미나를 소모하여 주변의 적과 물체를 앞으로 끌어당긴다.",
+        "방향을 조절할 수 있다.",
+        "스킬을 시전하는 동안 진은 이동할 수 없다.",
+        "",
+        "지키고자 하는 마음뿐인 진과 동행하는 것은 모든 위험을 동료의 곁에서 몰아내는 수호의 바람이다"
+      ],
+      "elementalBurst": "원소 폭발: 민들레 바람",
+      "elementalBurst_Explained": [
+        "바람의 가호를 소환해 천풍이 세차게 부는 민들레 영역을 만들어 적을 <c=#FFE48F>넉백</c>시키고 주변의 적에게 <c=#87F6FD>바람 원소 피해</c>를 준다.",
+        "또한 파티 내 모든 캐릭터의 HP를 대량 회복하고 회복량은 진의 공격력에 영향을 받는다."
+      ],
+      "elementalBurstField": "민들레 영역",
+      "elementalBurstField_Explained": [
+        "- 영역 내의 캐릭터는 HP를 지속해서 회복한다.",
+        "- 영역 내의 캐릭터는 지속해서 바람 원소의 영향을 받는다.",
+        "- 영역을 출입하는 적에게 <c=#87F6FD>바람 원소 피해</c>를 준다.",
+        "",
+        "바람의 은총은 대지에 흩뿌려진 민들레와 같다. 이것이 바로 진의 수호의 근원과 마음이다"
+      ],
+      "lv20": "고유특성20: 바람과 함께",
+      "lv20_Explained": "진의 <c=#FFE48F>일반 공격</c> 명중 시 50%의 확률로 파티 내 모든 캐릭터의 HP를 진 공격력의 15%만큼 회복한다.",
+      "lv70": "고유특성70: 바람의 인도",
+      "lv70_Explained": "<c=#FFE48F>민들레 바람</c> 사용 후 원소 에너지를 20% 회복한다.",
+      "lv0": "고유특성: 인도의 바람",
+      "lv0_Explained": "회복류 요리를 완벽 조리하면 12% 확률로 요리량의 2배를 획득한다.",
+      "C1": "제1단계 · 검척에 흐르는 폭풍",
+      "C1_Explained": "<c=#FFE48F>풍압검</c>을 1초 이상 홀드하면 끌어당기는 속도가 상승하고 가하는 피해가 40% 증가한다.",
+      "C2": "제2단계 · 모든 이를 수호하는 방패",
+      "C2_Explained": "진이 원소 구슬 혹은 원소 입자 획득 시 파티 내 모든 캐릭터의 공격속도와 이동속도가 15% 증가한다. 지속 시간: 15초",
+      "C3": "제3단계 · 서풍이 스칠 무렵",
+      "C3_Explained": [
+        "<c=#FFE48F>민들레 바람</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 민들레의 국토",
+      "C4_Explained": "<c=#FFE48F>민들레 바람</c> 영역 내에서 모든 적의 바람 원소 내성이 40% 감소한다.",
+      "C5": "제5단계 · 삽시간의 열풍",
+      "C5_Explained": [
+        "<c=#FFE48F>풍압검</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 만민을 보살피는 사자의 이빨",
+      "C6_Explained": [
+        "<c=#FFE48F>민들레 바람</c> 영역 내에서 캐릭터가 받는 피해가 35% 감소한다.",
+        "영역을 벗어난 후 해당 효과는 3번 피격 혹은 10초 후 사라진다."
+      ]
+    },
+    "albedo": {
+      "name": "알베도",
+      "title": "백악의 아이",
+      "normalAttacks": "일반 공격: 페보니우스 검술·백",
+      "normalAttacks_Explained": "",
+      "normalAttack": "일반 공격",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 순간적으로 전방을 향해 검을 2번 휘두른다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고, 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 창생법·모조 태양꽃",
+      "elementalSkill_Explained": "태양꽃을 생성해 <c=#87F6FD>바위 원소 범위 피해</c>를 준다.",
+      "elementalSkillSummon": "태양꽃",
+      "elementalSkillSummon_Explained": [
+        "태양꽃은 아래의 특성을 가진다:",
+        "- 태양꽃을 중심으로 한 영역에서 적이 피해를 받으면 태양꽃은 찰나의 꽃을 피워내 <c=#87F6FD>바위 원소 범위 피해</c>를 주며, 해당 피해는 알베도 방여력의 영향을 받는다.",
+        "- 찰나의 꽃은 2초마다 1번만 생성된다.",
+        "- 캐릭터가 태양꽃 위에 있을 때, 태양꽃은 바위 원소의 힘을 모아 캐릭터를 일정 높이까지 들어올리는 크리스탈 플랫폼을 만든다. 크리스탈 플랫폼은 동시에 1개만 존재할 수 있다.",
+        "- 알베도가 만들어 낸 태양꽃은 동시에 1개만 존재할 수 있다. 태양꽃은 바위 원소 창조물로 간주한다."
+      ],
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "태양꽃이 생성되는 위치를 조정할 수 있다.",
+        "",
+        "이러한 바위 꽃은 연금술의 목적과 일치하는 독특한 특징을 가지고 있다. 대지에서 태어났지만, 하늘 높이 올라가서 태양이 되고 싶어 한다"
+      ],
+      "elementalBurst": "원소 폭발: 탄생식·대지의 파동",
+      "elementalBurst_Explained": [
+        "바위 수정은 알베도의 지시에 따라 폭발해 알베도 전방에 <c=#87F6FD>바위 원소 범위 피해</c>를 준다.",
+        "필드 위에 알베도가 만든 태양꽃이 존재할 시, 태양꽃 영역 안에 생멸의 꽃 7송이가 맹렬하게 피어나면서 <c=#87F6FD>바위 원소 범위 피해</c>를 준다.",
+        "폭발 피해와 생멸의 꽃 피해는 찰나의 꽃을 만들어 낼 수 없다..",
+        "",
+        "백악색 왕자의 명령에 따라, 대지의 창조물이 용솟음친다"
+      ],
+      "lv20": "고유특성20: 백악색의 위압",
+      "lv20_Explained": "<c=#FFE48F>창생법·모조 태양꽃</c>의 찰나의 꽃이 HP가 50% 미만인 적에게 가하는 피해가 25% 증가한다.",
+      "lv70": "고유특성70: 병 속 인간의 지혜",
+      "lv70_Explained": "<c=#FFE48F>탄생식·대지의 파동</c> 발동 시 주변의 파티 내 캐릭터의 원소 마스터리가 125pt 증가한다. 지속 시간: 10초.",
+      "lv0": "고유특성: 천재의 발견",
+      "lv0_Explained": "무기 돌파 소재를 합성 시 10%의 확률로 생산량의 2배를 획득한다.",
+      "C1": "제1단계 · 에덴의 꽃",
+      "C1_Explained": "알베도의 <c=#FFE48F>창생법·모조 태양꽃</c>으로 생성된 찰나의 꽃이 피어날 때, 알베도 자신의 원소 에너지가 1.2pt 회복된다.",
+      "C2": "제2단계 · 현생의 누대",
+      "C2_Explained": [
+        "<c=#FFE48F>창생법·모조 태양꽃</c>의 찰나의 꽃이 피어날 때 알베도에게 생멸 카운트 효과를 부여한다. 지속 시간: 30초.",
+        "- <c=#FFE48F>탄생식·대지의 파동</c>을 발동하면 모든 생멸 카운트 효과를 지우고, 지운 스택이 많을수록 <c=#FFE48F>탄생식·대지의 파동</c>의 폭발 피해와 생멸의 꽃으로 가하는 피해가 증가한다.",
+        "- 생멸 카운트가 1스택 쌓일 때마다 피해가 알베도 방어력의 30%만큼 증가한다.",
+        "- 최대 중첩수: 4회"
+      ],
+      "C3": "제3단계 · 태양의 꽃",
+      "C3_Explained": [
+        "<c=#FFE48F>창생법·모조 태양꽃</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 신성의 추락",
+      "C4_Explained": "태양꽃 범위 안에 있는 현재 필드 위 캐릭터의 낙하 공격 피해가 30% 증가한다.",
+      "C5": "제5단계 · 명왕누대의 파동",
+      "C5_Explained": [
+        "<c=#FFE48F>탄생식·대지의 파동</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 무구의 흙",
+      "C6_Explained": "태양꽃 범위 안에 있는 현재 필드 위 캐릭터가 결정 반응으로 생성된 방패의 보호를 받고 있을 시 가하는 피해가 17% 증가한다."
+    },
+    "ayaka": {
+      "name": "아야카",
+      "title": "눈꽃의 백로",
+      "normalAttacks": "일반 공격: 카미사토류·경(傾)",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 거합 중 연속으로 검풍을 방출한다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 카미사토류·얼음꽃",
+      "elementalSkill_Explained": [
+        "활짝 핀 얼음꽃을 소환한 뒤 주위의 적을 공중에 띄워 <c=#87F6FD>얼음 원소 범위 피해</c>를 준다.",
+        "",
+        "「맑은 구름과 희미한 달빛이 내린 밤, 집념은 안개와 같아 어지러운 마음 쓸쓸히 먼 곳을 바라보네」"
+      ],
+      "elementalDash": "카미사토류·싸락눈 걸음",
+      "elementalDash_Explained": [
+        "<c=#FFE48F>대시를 대체한다</c>",
+        "부서진 얼음에 몸을 숨긴 후 스태미나를 소모해 빠른 속도로 이동한다",
+        "",
+        "해당 상태에서 아야카는 수면 위를 빠르게 이동할 수 있다",
+        "싸락눈 걸음 상태 종료 후 모습을 드러낼 때 아래의 효과가 발생한다:",
+        "- 얼음의 힘을 방출해 주변의 적에게 <c=#87F6FD>얼음 원소</c>를 부여한다",
+        "- 한기를 검에 모아 아야카는 짧은 시간 동안 <c=#87F6FD>얼음 원소 부여 효과</c>를 얻게 된다",
+        "",
+        "「물방울은 깃털을 적시고 순식간에 사라지는데, 백로가 물 위를 걷는다고 어찌 원망할 수 있겠는가?」"
+      ],
+      "elementalBurst": "원소 폭발: 카미사토류·멸망의 서리",
+      "elementalBurst_Explained": "독특한 자태로 차가운 서리를 모아 앞으로 나아가는 서리의 관물을 방출한다",
+      "elementalBurstSummon": "서리의 관문",
+      "elementalBurstSummon_Explained": "- 칼날처럼 날카로운 서리 바람으로 지속해서 접촉한 적을 베어 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+      "elementalBurstBloom": "서리의 관문 만개",
+      "elementalBurstBloom_Explained": [
+        "- 지속 시간이 끝나면 얼음 서리가 피어나 <c=#87F6FD>얼음 원소 범위 피해</c>를 준다.",
+        "",
+        "「흩날리는 눈발이 백로를 적시면, 그리움은 서리처럼 쌓이고 마음속엔 안타까움만 가득하네」"
+      ],
+      "lv20": "고유특성20: 천죄국죄 진사",
+      "lv20_Explained": "<c=#FFE48F>카미사토류·얼음꽃</c> 발동 후 6초 동안 아야카의 <c=#FFE48F>일반 공격</c>과 <c=#FFE48F>강공격</c>으로 가하는 피해가 30% 증가한다",
+      "lv70": "고유특성70: 한천선명 축사",
+      "lv70_Explained": [
+        "<c=#FFE48F>카미사토류·싸락눈 걸음</c> 상태가 종료될 때 방출되는 차가운 얼음이 적을 명중하면, 아야카는 아래의 효과를 획득한다:",
+        "- 스태미나를 10pt 회복한다.",
+        "- <c=#87F6FD>얼음 원소 피해 보너스</c>를 18% 획득한다. 지속 시간: 10초"
+      ],
+      "lv0": "고유특성: 감정 노하우",
+      "lv0_Explained": "무기 돌파 소재를 합성 시 10%의 확률로 생산량의 2배를 획득한다.",
+      "C1": "제1단계 · 서리에 검게 물든 벚꽃",
+      "C1_Explained": "아야카의 <c=#FFE48F>평타</c> 혹은 <c=#FFE48F>강공격</c>이 적에게 <c=#87F6FD>얼음 원소 피해</c>를 주면 50%의 확률로 <c=#FFE48F>카미사토류·얼음꽃</c>의 재사용 대기시간이 0.3초 감소한다. 해당 효과는 0.1초마다 1회만 발동한다.",
+      "C2": "제2단계 · 삼중 서리 관문",
+      "C2_Explained": "<c=#FFE48F>카미사토류·멸망의 서리</c> 발동 시 추가로 작은 규모의 서리의 관문 2개를 생성해 각각 원래의 20%의 피해를 준다.",
+      "C3": "제3단계 · 흩날리는 카미후부키",
+      "C3_Explained": [
+        "<c=#FFE48F>카미사토류·멸망의 서리</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 영고성쇠",
+      "C4_Explained": "<c=#FFE48F>카미사토류·멸망의 서리</c>로 새성된 서리의 관문이 가하는 피해를 받은 적의 방어력이 30% 감소한다. 지속 시간: 6초",
+      "C5": "제5단계 · 화운종월경",
+      "C5_Explained": [
+        "<c=#FFE48F>카미사토류·얼음꽃</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 물에 비친 달",
+      "C6_Explained": "아야카는 10초마다 「살얼음의 춤」 상태를 획득해 <c=#FFE48F>강공격</c>으로 가하는 피해가 298% 증가한다. 살얼음의 춤 효과는 강공격이 적을 명중하고 0.5초 후에 사라지며 다시 카운트 다운이 시작된다"
+    },
+    "mcElectro": {
+      "name": "mcElectro",
+      "title": "심연 공주",
+      "normalAttacks": "일반 공격: ",
+      "normalAttacks_Explained": "ㅡ",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "ㅡ",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "ㅡ",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고, 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: E",
+      "elementalSkill_Explained": "3개의 천둥 그림자를 발사해 <c=#87F6FD>번개 원소 피해</c>를 주고 적을 타격한 뒤 2개의 부적을 남긴다. 스킬을 다시 쓰면 부적은 초기화된다.",
+      "elementalSkillSummon": "부적",
+      "elementalSkillSummon_Explained": [
+        "캐릭터가 부적의 근처에 가면, 캐릭터는 부적을 흡수하고 다음의 효과를 얻는다:",
+        "- 원소 에너지를 회복하고 에너지 충전 효율(지속 시간: 6초)을 높인다.",
+        "",
+        "「ㅡ」"
+      ],
+      "elementalBurst": "원소 폭발: Q",
+      "elementalBurst_Explained": "벼락을 불러 근처의 적을 넉백하고 <c=#87F6FD>번개 원소 피해</c>를 준다.",
+      "elementalBurstCombo": "번개 장막",
+      "elementalBurstCombo_Explained": [
+        "- 현재 필드 위에 있는 자신의 캐릭터가 <c=#FFE48F>일반 공격</c>과 <c=#FFE48F>강공격</c>이 적을 타격하면, 천둥과 함께 <c=#87F6FD>번개 원소 피해</c>를 준다.",
+        "- 만약 천둥이 적을 타격하면, 공격을 가한 캐릭터의 원소 에너지를 충전한다.",
+        "- 천둥은 0.5초마다 시전할 수 있다.",
+        "",
+        "ㅡ"
+      ],
+      "lv20": "고유특성20: 20",
+      "lv20_Explained": "만약 여행자가 아닌 다른 캐릭터가 <c=#FFE48F>E 원소 스킬</c>의 부적을 획득하면, 여행자의 <c=#FFE48F>E 원소 스킬</c> 대기 시간이 1.5초 감소한다.",
+      "lv70": "고유특성70: 70",
+      "lv70_Explained": "<c=#FFE48F>E 원소 스킬</c>의 부적이 주는 효과인 에너지 충전 효율 상승이 여행자의 원소 충전 효율의 10%만큼 추가로 더 증가한다.",
+      "lv0": "ㅡ",
+      "lv0_Explained": "ㅡ",
+      "C1": "제1단계 · 1",
+      "C1_Explained": "부적의 최대 개수가 3개로 증가한다.",
+      "C2": "제2단계 · 2",
+      "C2_Explained": "<c=#FFE48F>Q 원소 폭발</c>의 천둥이 적을 타격하면, 적의 번개 원소 내성을 15% 감소시킨다. 지속 시간: 8초.",
+      "C3": "제3단계 · 3",
+      "C3_Explained": [
+        "<c=#FFE48F>Q 원소 폭발</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 4",
+      "C4_Explained": "부적을 흡수했을 때 캐릭터의 원소 에너지가 35% 미만인 경우, 부적에 의해 충전되는 원소 에너지가 100% 증가한다.",
+      "C5": "제5단계 · 5",
+      "C5_Explained": [
+        "<c=#FFE48F>E 원소 스킬</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 6",
+      "C6_Explained": "<c=#FFE48F>Q 원소 폭발</c>에 의해 발생하는 천둥은 2번 떨어질 때마다 다음 천둥의 데미지가 100% 증가하고, 현재 캐릭터의 원소에너지를 1pt 회복한다."
+    },
+    "chongyun": {
+      "name": "중운",
+      "title": "얼어붙은 열정",
+      "normalAttacks": "일반 공격: 악멸의 사식",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "검으로 최대 4번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": [
+        "스태미나를 지속해서 소모해 검을 휘두르며 주변의 적을 공격한다.",
+        "회전 종료 시 추가로 한 번 더 강력하게 휘두른다."
+      ],
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 영도·중첩의 서리",
+      "elementalSkill_Explained": "중운이 대검을 휘둘러 땅을 강하게 찍어 전방의 원형 범위 내에 얼음 폭발을 일으켜 적에게 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+      "elementalSkillField": "중첩의 서리 영역",
+      "elementalSkillField_Explained": [
+        "잠깐의 딜레이 후 얼음 폭발로 생긴 한기가 모여 중첩의 서리 영역이 생성된다. 영역 내의 한손검, 대검, 장병기를 사용하는 캐릭터는<c=#87F6FD>얼음 원소 부여 효과</c>를 얻는다.",
+        "",
+        "「소리가 울려 퍼지니 사방이 침묵하고, 강과 하천이 멈추고 구름에 서리가 낀다. 주문을 외우니 악령들이여 물렀거라」"
+      ],
+      "elementalBurst": "원소 폭발: 영도·떨어지는 별",
+      "elementalBurst_Explained": [
+        "중운이 결인하니 전방의 허공에서 연속으로 소환된 3개의 거대한 영도가 순서대로 땅에 떨어지면서 폭발한다.",
+        "영도 폭렬 시 <c=#87F6FD>얼음 원소 범위 피해</c>를 주고 적을 공중에 띄운다.",
+        "",
+        "「검에 천지가 요동치고, 얼음에 서리가 피어난다. 여율령!」"
+      ],
+      "lv20": "고유특성20: 진기 토납",
+      "lv20_Explained": "<c=#FFE48F>영도·중첩의 서리</c> 영역 내의 있는 한손검, 대검, 장병기 캐릭터의 <c=#FFE48F>일반 공격 속도</c>가 8% 상승한다.",
+      "lv70": "고유특성70: 빙검 추적의 주문",
+      "lv70_Explained": "<c=#FFE48F>영도·중첩의 서리</c> 영역이 사라질 때 영도를 소환해 주변의 적을 자동으로 공격해 영도 · 중첩의 서리 스킬 피해 100%만큼의 <c=#87F6FD>얼음 원소 범위 피해</c>를 준다. 피격된 적은 얼음 원소 내성이 10% 감소한다. 지속 시간: 8초.",
+      "lv0": "고유특성: 산과 바다로",
+      "lv0_Explained": "리월에서 탐색 임무 수행 시 소모하는 시간이 25% 감소한다.",
+      "C1": "제1단계 · 얼음의 노래",
+      "C1_Explained": "<c=#FFE48F>일반 공격</c>의 마지막 일격은 전방을 향해 얼음 칼날을 3개 날리고 칼날마다 경로상의 적에게 중운 공격력 50%의 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+      "C2": "제2단계 · 주천 운기",
+      "C2_Explained": "<c=#FFE48F>영도·중첩의 서리</c> 영역 내에서 발동된 원소 스킬과 원소 폭발의 재사용 대기시간이 15% 감소한다.",
+      "C3": "제3단계 · 구름이 걷히고 빛이 든다",
+      "C3_Explained": [
+        "<c=#FFE48F>영도·떨어지는 별</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 구름이 떠다니는 서리 하늘",
+      "C4_Explained": [
+        "중운의 모든 공격이 얼음 원소의 영향을 받은 적을 명중하면 자신의 원소 에너지를 1pt 회복한다.",
+        "해당 효과는 2초마다 1번 발동한다."
+      ],
+      "C5": "제5단계 · 참된 도리와 이치",
+      "C5_Explained": [
+        "<c=#FFE48F>영도·중첩의 서리</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 성인을 받드는 네 개의 령",
+      "C6_Explained": [
+        "<c=#FFE48F>영도·떨어지는 별</c>이 HP 백분율이 중운보다 낮은 적을 공격 시 가하는 피해가 15% 증가한다.",
+        "또한 발동 시 영도를 추가로 1자루 소환한다."
+      ]
+    },
+    "xiangling": {
+      "name": "향릉",
+      "title": "만민백미",
+      "normalAttacks": "일반 공격: 밀가루 음식 솜씨",
+      "normalAttacks_Explained": "",
+      "normalAttack": "일반 공격",
+      "normalAttack_Explained": "창으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 전방으로 돌진하며 경로상의 적에게 피해를 준다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 누룽지 출격",
+      "elementalSkill_Explained": [
+        "불을 뿜는 누룽지를 소환해 전방의 적을 향해 끊임없이 불을 뿜어 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+        "",
+        "누룽지는 매운 음식을 좋아하지만 이토록 매운 음식은 감당해낼 수 없다"
+      ],
+      "elementalBurst": "원소 폭발: 화륜",
+      "elementalBurst_Explained": [
+        "불의 세기와 창술을 컨트롤하는 뛰어난 기교로 자신을 둘러싸고 빠른 속도로 회전하는 화륜을 만들어낸다.",
+        "지속 기간 동안 화륜은 캐릭터를 따라다니며 경로상의 적에게 <c=#87F6FD>불 원소 피해</c>를 준다.",
+        "",
+        "화력은 언제나 부족하다"
+      ],
+      "lv20": "고유특성20: 교차 화력",
+      "lv20_Explained": "누룽지가 불을 뿜는 거리가 20% 증가한다.",
+      "lv70": "고유특성70: 절운차오톈자오",
+      "lv70_Explained": "<c=#FFE48F>누룽지 출격</c> 효과 종료 후 누룽지는 사라진 위치에 고추를 하나 남긴다. 고추를 주우면 공격력이 10% 증가한다. 지속 시간: 10초.",
+      "lv0": "고유특성: 만민당 주방장",
+      "lv0_Explained": "공격류 요리를 완벽 조리하면 12% 확률로 요리량의 2배를 획득한다.",
+      "C1": "제1단계 · 겉은 바삭, 속은 촉촉",
+      "C1_Explained": "누룽지의 공격에 피격된 적은 <c=#87F6FD>불 원소 내성</c>이 15% 감소한다. 지속 시간: 6초.",
+      "C2": "제2단계 · 큰 불에 기름 붓기",
+      "C2_Explained": "<c=#FFE48F>일반 공격</c>의 최후의 일격은 적에게 2초 동안 지속적인 내폭 효과를 부여한다. 효과 종료 시 폭발하여 주변의 적에게 공격력 75%의 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+      "C3": "제3단계 · 센 불로 조리하기",
+      "C3_Explained": [
+        "<c=#FFE48F>화륜</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 약불로 천천히 삶기",
+      "C4_Explained": "<c=#FFE48F>화륜</c>의 지속 시간을 40% 연장한다.",
+      "C5": "제5단계 · 흉포한 누룽지",
+      "C5_Explained": [
+        "<c=#FFE48F>누룽지 출격</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 토네이도 화륜",
+      "C6_Explained": "<c=#FFE48F>화륜</c>이 지속되는 동안 파티 내 모든 캐릭터는 <c=#87F6FD>불 원소 피해 보너스</c>를 15% 획득한다."
+    },
+    "klee": {
+      "name": "클레",
+      "title": "도망치는 태양",
+      "normalAttacks": "일반 공격: 펑펑",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "무언가에 부딪히면 펑하고 폭발하는 물건을 던진다! 폭발 공격을 최대 3회까지 발동해 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 짧은 영창 후 적을 폭격하여 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 열염의 힘을 모은 후 지면을 강타해 경로상의 적을 공격하고 착지 시 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+      "elementalSkill": "원소 스킬: 통통 폭탄",
+      "elementalSkill_Explained": [
+        "끝없는 즐거움을 가져다주는 <c=#FFE48F>통통 폭탄</c>을 던진다!",
+        "<c=#FFE48F>통통 폭탄</c>은 연속으로 3회 튕기며 튕길 때마다 폭발을 일으켜 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+        "",
+        "3번 튕긴 후 폭탄은 수많은 부비트랩으로 분열된다.",
+        "적이 밟거나 일정 시간이 지나면 부비트랩은 폭발하여 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+        "",
+        "초기 사용 가능 횟수: 2회",
+        "",
+        "통통은 클레의 「친한 친구」이다... 클레는 항상 참지 못하고 모두에게 이 친구를 소개하곤 한다"
+      ],
+      "elementalBurst": "원소 폭발: 쾅쾅 불꽃",
+      "elementalBurst_Explained": [
+        "클레 최대 화력! 스킬을 발동하는 동안 쾅쾅 불꽃을 끊임없이 소환해 주변의 적에게 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+        "",
+        "기사단 사람들은 클레가 한 번도 자신의 폭탄에 휘말려 들지 않는 건 행운의 별이 그녀를 지켜주고 있기 때문이라고 믿는다..."
+      ],
+      "lv20": "고유특성20: 펑펑 선물",
+      "lv20_Explained": [
+        "<c=#FFE48F>통통 폭탄</c>과 <c=#FFE48F>일반 공격</c>으로 피해를 줄 때 50%의 확률로 클레에게 폭렬 불꽃을 1송이 부여한다.",
+        "<c=#FFE48F>강공격</c> 발동 시 소모되는 스태미나를 대신해 폭렬 불꽃을 소모하며 가하는 피해가 50% 증가한다."
+      ],
+      "lv70": "고유특성70: 무한 스파크",
+      "lv70_Explained": "클레가 <c=#FFE48F>강공격</c> 시 치명타가 발생하면 파티 내 모든 캐릭터의 원소 에너지를 2pt 회복한다.",
+      "lv0": "고유특성: 전부 보물이야",
+      "lv0_Explained": "미니맵에 주위의 <c=#FFE48F>몬드 지역 특산물</c> 위치가 나타난다.",
+      "C1": "제1단계 · 연쇄 폭발",
+      "C1_Explained": "공격과 스킬 발동 시 일정 확률로 불꽃을 소환해 적을 폭격하여 <c=#FFE48F>쾅쾅 불꽃</c>으로 가하는 피해의 120%만큼 피해를 준다.",
+      "C2": "제2단계 · 퍄퍄 포탄 파편",
+      "C2_Explained": "<c=#FFE48F>통통 폭탄</c>의 부비트랩은 적의 방어력을 23% 감소시킨다. 지속시간: 10초",
+      "C3": "제3단계 · 클레 특제",
+      "C3_Explained": [
+        "<c=#FFE48F>통통 폭탄</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 일촉즉발",
+      "C4_Explained": "<c=#FFE48F>쾅쾅 불꽃</c>이 지속되는 동안 퇴장하면 폭발을 일으켜 공격력 555%의 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+      "C5": "제5단계 · 포격 천재",
+      "C5_Explained": [
+        "<c=#FFE48F>쾅쾅 불꽃</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 화력 전개",
+      "C6_Explained": [
+        "<c=#FFE48F>쾅쾅 불꽃</c> 상태에서 클레는 3초마다 파티 내 모든 캐릭터(클레 자신을 포함하지 않음)의 원소 에너지 3pt를 지속해서 회복시킨다.",
+        "<c=#FFE48F>쾅쾅 불꽃</c> 발동 후 25초 동안 파티 내 모든 캐릭터는 <c=#87F6FD>불 원소 피해 보너스</c>를 10% 획득한다."
+      ]
+    },
+    "diluc": {
+      "name": "다이루크",
+      "title": "새벽의 어둠",
+      "normalAttacks": "일반 공격: 단련의 검",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "검으로 최대 4번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": [
+        "스태미나를 지속해서 소모해 빠른 속도로 <c=#FFE48F>연속 베기</c>를 발동한다.",
+        "강공격 종료 시 추가로 검을 한 번 더 강력하게 휘두른다."
+      ],
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 역날의 화염",
+      "elementalSkill_Explained": [
+        "대검을 휘둘러 <c=#87F6FD>불 원소 피해</c>를 준다.",
+        "",
+        "연속으로 3회까지 사용할 수 있다.",
+        "만약 일정 시간 내에 계속 사용하지 않으면 재사용 대기시간에 진입한다.",
+        "",
+        "각각 다이루크가 주관하고 있는 정의, 용기, 그리고 책임감을 상징한다"
+      ],
+      "elementalBurst": "원소 폭발: 여명",
+      "elementalBurst_Explained": [
+        "뜨거운 화염의 힘을 폭발하여 주변의 적을 넉백시키고 <c=#87F6FD>불 원소 피해</c>를 준다. 그리고 대검에 뜨거운 화염을 응집시킨 후 검을 휘둘러 전방을 향해 날아가는 불새를 소환해 경로상의 적에게 대량의 <c=#87F6FD>불 원소 피해</c>를 주고, 불새가 사라지기 전에 폭발해 대량의 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+        "무기에 응집된 뜨거운 화염은 다이루크에게 <c=#87F6FD>불 원소 효과</c>를 부여한다.",
+        "",
+        "어둠 속을 걷는 건 빛을 가져오기 위함이다. 저 멀리 고요한 밤에 타오르는 불빛은 동틀 무렵의 전조다"
+      ],
+      "lv20": "고유특성20: 끊임없는 정진",
+      "lv20_Explained": "다이루크의 <c=#FFE48F>강공격</c> 스태미나 소모량이 50% 감소하고 최대 지속 시간이 3초 늘어난다.",
+      "lv70": "고유특성70: 융해의 날개",
+      "lv70_Explained": "<c=#FFE48F>여명</c>이 제공하는 <c=#87F6FD>불 원소 마법 부여</c>의 지속 시간이 4초 연장된다. 또한 효과가 지속하는 동안 다이루크는 <c=#87F6FD>불 원소 피해 보너스</c>를 20% 획득한다.",
+      "lv0": "새벽의 전통",
+      "lv0_Explained": "양손검 무기 단조 시 소모한 광석을 15% 반환한다.",
+      "C1": "제1단계 · 죄악 징벌",
+      "C1_Explained": "HP가 50%를 초과하는 적에게 다이루크가 가하는 피해가 15% 증가한다.",
+      "C2": "제2단계 · 뜨거운 잿더미",
+      "C2_Explained": [
+        "다이루크가 피격 시 공격력이 10%, 공격속도가 5% 증가한다. 지속 시간: 10초",
+        "해당 효과는 최대 3회 중첩되며 1.5초마다 1번 발동한다."
+      ],
+      "C3": "제3단계 · 강철의 불꽃",
+      "C3_Explained": [
+        "<c=#FFE48F>역날의 화염</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 유화의 화상",
+      "C4_Explained": [
+        "<c=#FFE48F>역날의 화염</c>을 차례대로 방출하면 가하는 피해가 대폭 증가한다.",
+        "<c=#FFE48F>역날의 화염</c> 발동 후 2초가 지나면 다음 <c=#FFE48F>역날의 화염</c> 피해가 40% 증가한다. 지속 시간: 2초"
+      ],
+      "C5": "제5단계 · 여명을 알리는 불새",
+      "C5_Explained": [
+        "<c=#FFE48F>여명</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 어둠을 가르는 화염의 검",
+      "C6_Explained": [
+        "<c=#FFE48F>역날의 화염</c> 발동 후 6초 동안 일반 공격 2회의 공격속도가 30% 증가하고 가하는 피해가 30% 증가한다.",
+        "또한 <c=#FFE48F>역날의 화염</c>은 <c=#FFE48F>일반 공격</c>의 연격을 끊지 않는다."
+      ]
+    },
+    "venti": {
+      "name": "벤티",
+      "title": "바람의 시인",
+      "normalAttacks": "일반 공격: 신성한 사격술",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "활로 최대 6번 공격한다.",
+      "chargedAttack": "조준 사격",
+      "chargedAttack_Explained": [
+        "피해가 더 크고 정확한 <c=#FFE48F>조준 사격</c>을 한다.",
+        "조준 시 천지를 보살피는 바람이 화살 촉에 계속해서 모인다. 바람의 힘이 가득 찬 화살은 <c=#87F6FD>바람 원소 피해</c>를 준다."
+      ],
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 화살비를 쏜 후 빠른 속도로 땅에 착지한다. 땅에 닿으면 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 높은 하늘의 노래",
+      "elementalSkill_Explained": "시와 노래가 함께 울려 퍼지는 바람을 소환해 흙먼지 위를 걷는 사물을 높은 하늘로 띄워보자.",
+      "elementalSkillClick": "짧은 터치",
+      "elementalSkillClick_Explained": "적이 있는 위치에 바람의 영역을 소환해 <c=#87F6FD>바람 원소 범위 피해</c>를 주고 적을 공중에 띄운다.",
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "자신을 중심으로 더 큰 바람의 영역을 만들어내 <c=#87F6FD>바람 원소 범위 피해</c>를 주고 적을 공중에 띄운다.",
+        "홀드하여 발동한 뒤 벤티는 바람을 타고 공중에 떠오른다.",
+        "공중에 띄워진 적은 천천히 추락한다.",
+        "",
+        "사람과 신이 함께했던 시대에 수많은 노래가 사방으로 울려 퍼졌다. 이건 이미 오래전에 잊혀진 멜로디이다."
+      ],
+      "elementalBurst": "원소 폭발: 바람신의 시",
+      "elementalBurst_Explained": [
+        "천풍이 모여 만들어진 화살을 쏴 전방에 거대한 폭풍의 눈을 만들어내 적을 감아올려 <c=#87F6FD>바람 원소 피해</c>를 계속 준다.",
+        "폭풍의 눈이 적을 감아올리는 힘은 벤티의 레벨에 비례한다."
+      ],
+      "elementalBurstCombo": "원소 전환",
+      "elementalBurstCombo_Explained": [
+        "폭풍의 눈은 스킬을 시전하는 동안 <c=#87F6FD>불 원소</c>/<c=#87F6FD>물 원소</c>/<c=#87F6FD>번개 원소</c>/<c=#87F6FD>얼음 원소</c>에 닿으면 <c=#87F6FD>불 원소</c>><c=#87F6FD>물 원소</c>><c=#87F6FD>번개 원소</c>><c=#87F6FD>얼음 원소</c>의 우선순위로 상응하는 원소 속성을 획득하고 추가로 해당 속성 피해를 준다.",
+        "원소 전환은 스킬을 시전하는 동안 1회만 발생한다.",
+        "",
+        "바람의 신을 칭송하는 수많은 잃어버린 시편 중 하나인 이 시는 그와 바람의 힘을 묘사했다"
+      ],
+      "lv20": "고유특성20: 여풍의 포옹",
+      "lv20_Explained": "<c=#87F6FD>높은 하늘의 노래</c>를 홀드하면 상승 기류가 생성된다. 지속 시간: 20초",
+      "lv70": "고유특성70: 폭풍의 눈",
+      "lv70_Explained": [
+        "<c=#87F6FD>바람 신의 시</c> 효과 종료 후 벤티의 원소 에너지를 15pt 회복한다.",
+        "만약 원소 전환이 발생하면, 해당 원소와 대응하는 파티 내 모든 캐릭터의 원소 에너지를 15pt 회복한다."
+      ],
+      "lv0": "고유특성: 향풍과 함께",
+      "lv0_Explained": [
+        "파티 내 자신의 캐릭터가 활강할 시 소모하는 스태미나가 20% 감소한다.",
+        "같은 효과의 고유 특성과 중첩되지 않는다."
+      ],
+      "C1": "제1단계 · 쏘아 올린 창풍",
+      "C1_Explained": "<c=#FFE48F>조준 사격</c> 시 추가로 두 발의 분열 된 화살을 발사한다. 각각 기존 화살의 33% 피해를 준다.",
+      "C2": "제2단계 · 그리운 찬 바람",
+      "C2_Explained": [
+        "<c=#FFE48F>높은 하늘의 노래</c>는 적의 바람 원소 내성과 물리 내성을 12% 감소시킨다. 지속 시간: 10초",
+        "<c=#FFE48F>높은 하늘의 노래</c>에 의해 공중에 띄워진 적은 땅에 닿기 전에 바람 원소 내성과 물리 내성이 추가로 12% 감소한다."
+      ],
+      "C3": "제3단계 · 천풍의 시",
+      "C3_Explained": [
+        "<c=#FFE48F>바람신의 시</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 자유의 찬 바람",
+      "C4_Explained": "벤티가 원소 구슬 혹은 원소 입자를 획득 후 <c=#FFE48F>바람 원소 피해 보너스</c>를 25% 획득한다. 지속 시간: 10초",
+      "C5": "제5단계 · 높은 하늘의 협주",
+      "C5_Explained": [
+        "<c=#FFE48F>높은 하늘의 노래</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 투쟁의 폭풍",
+      "C6_Explained": [
+        "<c=#FFE48F>바람신의 시</c>에 피격된 적은 바람 원소 내성이 20% 감소한다.",
+        "원소 전환이 발생할 경우 해당 원소 내성도 20% 감소한다."
+      ]
+    },
+    "fischl": {
+      "name": "피슬",
+      "title": "단죄의 황녀!!",
+      "normalAttacks": "일반 공격: 죄멸의 화살",
+      "normalAttacks_Explained": "",
+      "normalAttack": "평타",
+      "normalAttack_Explained": "활로 최대 5번 공격한다.",
+      "chargedAttack": "조준 사격",
+      "chargedAttack_Explained": [
+        "피해가 더 크고 정확한 <c=#FFE48F>조준 사격</c>을 한다.",
+        "조준 시 유야정토의 검은 번개 정령이 황녀의 명령을 받아 그녀의 뇌영 화살에 깃든다. 단죄의 번개의 힘이 가득 찬 마법 화살은 강력한 <c=#87F6FD>번개 원소 피해</c>를 준다."
+      ],
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 화살비를 쏜 후 빠른 속도로 땅에 착지한다. 땅에 닿으면 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 밤을 순찰하는 그림자 날개",
+      "elementalSkill_Explained": [
+        "오즈를 소환한다. 암영과 뇌전으로 구성된 레이븐이 속세에 강림할 때 작은 범위 내의 적에게 <c=#87F6FD>번개 원소 피해</c>를 준다.",
+        "오즈는 존재하는 동안 <c=#87F6FD>번개 에너지 탄</c>을 발사하여 주변의 적을 공격한다.",
+        "오즈가 존재하는 동안 다시 한번 짧게 누르면 오즈를 자신의 주변으로 소환할 수 있다."
+      ],
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "홀드하여 오즈의 위치를 조정할 수 있다.",
+        "",
+        "「이 황녀님의 시간은 아주 귀중하다고. 너희 같은 녀석들에게 낭비할 순 없어... 오즈, 나를 대신해 영원한 밤을 가르는 단죄의 번개를 내리거라.」——《피슬 황녀 야화 · 권4 · 「세계와 영원히 이별한 부인」》"
+      ],
+      "elementalBurst": "원소 폭발: 암야의 환상",
+      "elementalBurst_Explained": [
+        "오즈를 소환해 칠흑으로 엮은 두 날개로 피슬을 보호한다.",
+        "지속하는 동안 아래의 효과를 가진다:",
+        "- 오즈의 형태로 변해 고속 이동한다.",
+        "- 주변의 적에게 번개를 떨어트려 <c=#87F6FD>번개 원소 피해</c>를 준다. 적 1명마다 낙뢰 피해를 1번만 받는다.",
+        "- 효과 종료 시 오즈는 필드에 머물러 황녀의 적을 공격한다. 만약 오즈가 필드에 있으면 오즈의 존재 시간이 초기화된다.",
+        "",
+        "...저주받은 단죄의 피를 추종하여 따라온 야수 무리 중, 천 가지 세계의 적멸을 지켜본 까마귀 황제만이 그녀의 숭고함을 알아볼 수 있다. 그리하여 그는 칠흑으로 엮은 두 날개로 고귀한 황녀를 영원히 지켜주겠노라고 맹세했다. ——《피슬 황녀 야화 · 권1 · 「종말 해체 개요」》"
+      ],
+      "lv20": "고유특성20: 별을 삼킨 까마귀",
+      "lv20_Explained": "피슬이 <c=#FFE48F>차지 완료된 화살</c>로 오즈를 명중하면 오즈가 주변의 적에게 신성한 번개를 내리고 사격 피해의 152.7%에 달하는 <c=#87F6FD>번개 원소 범위 피해</c>를 준다.",
+      "lv70": "고유특성70: 단죄의 뇌영",
+      "lv70_Explained": "오즈가 필드에 존재 시 현재 필드 위에 있는 자신의 캐릭터가 적을 공격하여 <c=#87F6FD>번개 원소 관련 반응</c>이 발동되었다면 적에게 신성한 번개를 내려 피슬 공격력 80%의 <c=#87F6FD>번개 원소 피해</c>를 준다.",
+      "lv0": "고유특성: 황녀의 화원",
+      "lv0_Explained": "몬드에서 탐색 임무 수행 시 소모하는 시간이 25% 감소한다.",
+      "C1": "제1단계 · 그윽한 까마귀 눈",
+      "C1_Explained": "오즈가 필드에 존재하지 않을 때는 까마귀 눈으로 피슬을 지켜준다. 피슬이 적에게 <c=#FFE48F>일반 공격</c>을 가할 시 오즈는 까마귀 눈을 통해 함께 공격해 공격력 22%의 피해를 준다.",
+      "C2": "제2단계 · 신성한 판결의 그림자 깃털",
+      "C2_Explained": "<c=#FFE48F>밤을 순찰하는 그림자 날개</c> 발동 시 추가적으로 공격력 200%의 피해를 주고 영향 범위가 50% 확대된다.",
+      "C3": "제3단계 · 심연색의 검은 날개",
+      "C3_Explained": [
+        "<c=#FFE48F>밤을 순찰하는 그림자 날개</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 황녀의 환상 이야기",
+      "C4_Explained": [
+        "<c=#FFE48F>암야의 환상</c> 발동 시 주변의 적에게 공격력 222%의 <c=#87F6FD>번개 원소 피해</c>를 준다.",
+        "스킬 효과가 사라지면 피슬의 HP를 20% 회복한다."
+      ],
+      "C5": "제5단계 · 암야 묵시록",
+      "C5_Explained": [
+        "<c=#FFE48F>암야의 환상</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 영야의 금수",
+      "C6_Explained": "오즈의 존재 시간을 2초 연장한다. 또한 오즈가 현재 필드 위에 있는 자신의 캐릭터와 함께 공격하여 피슬 공격력 30%의 <c=#87F6FD>번개 원소 피해</c>를 준다."
+    },
+    "xinyan": {
+      "name": "신염",
+      "title": "폭열 멜로디",
+      "normalAttacks": "일반 공격: 염무",
+      "normalAttacks_Explained": "",
+      "normalAttack": "일반 공격",
+      "normalAttack_Explained": "검으로 최대 4번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": [
+        "스태미나를 지속해서 소모해 검을 휘두르며 주변의 적을 공격한다.",
+        "회전 종료 시 추가로 한 번 더 강력하게 휘두른다."
+      ],
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 정열의 연주",
+      "elementalSkill_Explained": [
+        "신염이 악기를 휘둘러 주변의 적에게 <c=#87F6FD>불 원소 피해</c>를 주고 관중의 열정을 빌려 보호막을 생성한다.",
+        "보호막의 피해 흡수량은 신염의 방어력과 명중한 적의 숫자에 영향을 받는다.",
+        "- 적을 명중하지 못하거나 1명 명중: 1급 보호막 · 변칙 리듬",
+        "- 적 2명 명중: 2급 보호막 · 선창 리듬",
+        "- 적 3명 이상 명중: 3급 보호막 · 댄스 리듬을 생성하며, 피해 흡수뿐만 아니라 간헐적으로 주변의 적에게 <c=#87F6FD>불 원소 피해</c>를 준다",
+        "",
+        "보호막은 아래의 특성을 가진다:",
+        "- 발동하는 순간 신염에게 <c=#87F6FD>불 원소를 부착</c>한다.",
+        "- <c=#87F6FD>불 원소 피해</c>에 대해 250%의 흡수 효과가 있다.",
+        "",
+        "신염은 이 불꽃들은 자신의 연주 스킬이 극한에 도달하여 생긴 물리 현상으로 신의 눈과는 관련이 없다고 주장한다"
+      ],
+      "elementalBurst": "원소 폭발: 반항의 피치카토",
+      "elementalBurst_Explained": [
+        "빠른 피치카토로 생긴 음파로 적을 <c=#FFE48F>넉백</c>시키고 주변의 적에게 <c=#FFE48F>물리 피해</c>를 주며 「무대」 분위기를 띄운다.",
+        "뜨거운 분위기로 생긴 화염은 주변의 적에게 <c=#87F6FD>불 원소 지속 피해</c>를 준다.",
+        "",
+        "「신염은 공연이 끝날 때마다 이런 짓을 했다. 나중에 그만두게 된 이유는 관중들이 「앵콜」하면 이보다 더 멋진 엔딩을 만들 자신이 없었기 때문이다」"
+      ],
+      "lv20": "고유특성20: 「청중이 없어도 연주해야 돼…」",
+      "lv20_Explained": [
+        "<c=#FFE48F>정열의 연주</c>의 보호막에 필요한 적 명중 수량 감소:",
+        "- 2급 보호막 · 선창 리듬: 적 1명 명중",
+        "- 3급 보호막 · 댄스 리듬: 적 2명 이상 명중"
+      ],
+      "lv70": "고유특성70: 「…이것이 로큰롤!」",
+      "lv70_Explained": "<c=#FFE48F>정열의 연주</c> 보호막의 보호를 받고 있는 캐릭터가 가하는 물리 피해가 15% 증가한다.",
+      "lv0": "고유특성: 로큰롤 레시피",
+      "lv0_Explained": "방어류 요리를 완벽 조리하면 12% 확률로 요리량의 2배를 획득한다.",
+      "C1": "제1단계 · 절명의 가속",
+      "C1_Explained": [
+        "신염이 치명타를 입히면 5초 동안 <c=#FFE48F>일반 공격</c>과 <c=#FFE48F>강공격</c>의 공격 속도가 12% 증가한다.",
+        "해당 효과는 5초마다 1회 발동한다."
+      ],
+      "C2": "제2단계 · 오프닝 즉흥연주",
+      "C2_Explained": "<c=#FFE48F>반항의 피치카토</c>로 가하는 물리 피해 치명타 확률이 100% 증가하고 발동 시 3급 보호막 · 댄스 리듬을 생성한다.",
+      "C3": "제3단계 · 더블 스탑",
+      "C3_Explained": [
+        "<c=#FFE48F>정열의 연주</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 리듬의 전염",
+      "C4_Explained": "<c=#FFE48F>정열의 연주</c>의 휘두르기 피해는 적의 물리 내성을 15% 감소시킨다. 지속 시간: 12초.",
+      "C5": "제5단계 · 앵콜의 함성",
+      "C5_Explained": [
+        "<c=#FFE48F>반항의 피치카토</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 지옥의 연주",
+      "C6_Explained": "신염의 <c=#FFE48F>강공격</c>의 스태미나 소모량이 30% 감소한다. <c=#FFE48F>강공격</c> 시 <c=#FFE48F>공격력 보너스</c>를 방어력의 50%만큼 획득한다."
+    },
+    "beidou": {
+      "name": "북두",
+      "title": "무관의 용왕",
+      "normalAttacks": "일반 공격: 파도 정복",
+      "normalAttacks_Explained": "",
+      "normalAttack": "일반 공격",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": [
+        "스태미나를 지속해서 소모해 빠른 속도로 연속 베기를 발동한다.",
+        "<c=#FFE48F>강공격</c> 종료 시 추가로 한 번 더 강력하게 휘두른다."
+      ],
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 파도잡이",
+      "elementalSkill_Explained": "걱정할 필요 없다. 만약 그녀와 그녀의 사람에게 손을 대면 뇌전과 대검으로 10배로 갚아줄 것이다.",
+      "elementalSkillClick": "짧은 터치",
+      "elementalSkillClick_Explained": "번개의 힘을 모아 전방에 대검을 맹렬하게 휘둘러 <c=#87F6FD>번개 원소 피해</c>를 준다.",
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "무기를 들어 보호막을 생성한다. 피해 흡수량은 북두 HP 최대치의 영향을 받는다.",
+        "스킬 버튼에 손을 떼거나 지속 시간이 끝나면 대검을 휘둘러 축적한 힘을 방출해 공격하여 <c=#87F6FD>번개 원소 피해</c>를 준다. 스킬을 시전하는 동안 피격된 횟수에 따라 적에게 가하는 피해가 상승한다.",
+        "보호막은 아래의 효과를 가진다:",
+        "- <c=#87F6FD>번개 원소 피해</c>에 대해 250%의 흡수 효과가 있다.",
+        "- 시전하는 순간 북두에게 <c=#87F6FD>번개 원소를 부착</c>한다.",
+        "",
+        "망망대해를 가로지르는 선박이 번개를 쫓고 파도를 잡는다"
+      ],
+      "elementalBurst": "원소 폭발: 작뢰",
+      "elementalBurst_Explained": "해산 괴수를 물리치던 전투를 회상하며 괴수와 뇌전의 힘을 동시에 깨워 뇌전 괴수의 방패를 만들어내 자신을 둘러싸고 주변의 적에게 <c=#87F6FD>번개 원소 피해</c>를 준다.",
+      "elementalBurstCombo": "뇌전 괴수의 방패",
+      "elementalBurstCombo_Explained": [
+        "- <c=#FFE48F>일반 공격</c>과 <c=#FFE48F>강공격</c> 명중 시 적들 사이를 옮겨 다니는 체인 라이트닝을 1개 발동해 <c=#87F6FD>번개 원소 피해</c>를 준다.",
+        "- 캐릭터의 경직 저항력이 상승하고 받는 피해가 감소한다.",
+        "",
+        "1초마다 체인 라이트닝은 최대 1개 발동된다.",
+        "",
+        "천둥번개가 내려치니 해산이 갈라진다"
+      ],
+      "lv20": "고유특성20: 우주에 퍼지는 오로라",
+      "lv20_Explained": "피격 시 발동하는 <c=#FFE48F>파도잡이</c> 반격은 최대 피해 보너스를 부여한다.",
+      "lv70": "고유특성70: 하늘의 벽력",
+      "lv70_Explained": [
+        "최대 피해 보너스를 가진 <c=#FFE48F>파도잡이</c>를 발동한 후 10초 동안 아래의 효과를 획득한다:",
+        "- <c=#FFE48F>일반 공격</c>과 <c=#FFE48F>강공격</c>으로 가하는 피해가 15% 증가하고 공격속도가 15% 증가한다.",
+        "- <c=#FFE48F>강공격</c>에 필요한 준비 시간이 대폭 줄어든다."
+      ],
+      "lv0": "고유특성: 조수의 정복자",
+      "lv0_Explained": [
+        "파티 내 자신의 캐릭터의 헤엄 시 소모하는 스태미나가 20% 감소한다.",
+        "같은 효과의 고유 특성과 중첩되지 않는다."
+      ],
+      "C1": "제1단계 · 사방으로 잠긴 어룡",
+      "C1_Explained": [
+        "<c=#FFE48F>작뢰</c> 발동 시:",
+        "HP 최대치의 16%에 해당하는 피해를 흡수하는 보호막을 생성한다. 지속 시간: 15초.",
+        "이 보호막은 <c=#87F6FD>번개 원소 피해</c>에 대해 250%의 흡수 효과가 있다."
+      ],
+      "C2": "제2단계 · 솟아오르는 천둥번개",
+      "C2_Explained": "<c=#FFE48F>작뢰</c>의 체인 라이트닝이 추가로 2명의 적에게 튕긴다.",
+      "C3": "제3단계 · 조류발전",
+      "C3_Explained": [
+        "<c=#FFE48F>파도잡이</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 별을 따라 찾은 고향의 땅",
+      "C4_Explained": "피격 후 10초 동안 북두의 일반 공격에 20%의 <c=#87F6FD>번개 원소 피해</c>가 추가된다.",
+      "C5": "제5단계 · 파도를 비추는 노을빛",
+      "C5_Explained": [
+        "<c=#FFE48F>작뢰</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 북두의 귀신 퇴치",
+      "C6_Explained": "<c=#FFE48F>작뢰</c>가 지속되는 동안 주변의 적의 <c=#87F6FD>번개 원소 내성</c>이 15% 감소한다."
+    },
+    "keqing": {
+      "name": "각청",
+      "title": "질뢰쾌우",
+      "normalAttacks": "일반 공격: 운래 검법",
+      "normalAttacks_Explained": "",
+      "normalAttack": "일반 공격",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 순간적으로 전방을 향해 검을 2번 휘두른다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고, 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 성신 회귀",
+      "elementalSkill_Explained": [
+        "뇌설을 빠르게 던져 뇌전의 기세로 적을 섬멸한다.",
+        "뇌설은 명중 시 작은 범위의 적에게 <c=#87F6FD>번개 원소 피해</c>를 주고 명중한 위치에 뇌설 표식을 남긴다."
+      ],
+      "elementalSkillHold": "홀드",
+      "elementalSkillHold_Explained": [
+        "길게 눌러 뇌설 표식을 던지는 방향을 조절할 수 있다.",
+        "길게 눌러 던진 표식은 공중에 머물 수 있으며 각청이 <c=#FFE48F>성신 회귀</c>를 발동하면 지형 장애물을 뛰어넘을 수 있다."
+      ],
+      "elementalSkillCombo": "뇌설",
+      "elementalSkillCombo_Explained": [
+        "뇌설 지속 기간에 각청이 <c=#FFE48F>성신 회귀</c> 혹은 <c=#FFE48F>강공격</c>을 다시 발동하면 뇌설 표식을 지우고 각기 다른 효과가 발동된다:",
+        "- <c=#FFE48F>성신 회귀</c> 재발동 시 표식이 있는 곳으로 순간 이동 후 참격으로 <c=#87F6FD>번개 원소 범위 피해</c>를 준다. 길게 눌러 발동한 뇌설의 위치로 순간 이동 시 지형 장애물을 뛰어넘을 수 있다.",
+        "- <c=#FFE48F>강공격</c> 발동 시 표식이 있는 곳에서 뇌폭 참격으로 여러 차례의 <c=#87F6FD>번개 원소 범위 피해</c>를 준다.",
+        "",
+        "「인간은 나방과도 같아. 신선이라고 불리는 불꽃을 향해 날아들지. 하지만 이 불꽃은 내가 스스로 키운 거야.」"
+      ],
+      "elementalBurst": "원소 폭발: 천가 순유",
+      "elementalBurst_Explained": [
+        "뇌전의 힘을 폭발 시켜 <c=#87F6FD>번개 원소 피해</c>를 준다.",
+        "이후 검의 그림자 속으로 은신해 주변의 적에게 번쩍이는 번개처럼 빠른 연속 참격으로 <c=#87F6FD>번개 원소 피해</c>를 주고 최후의 일격으로 대량의 <c=#87F6FD>번개 원소 범위 피해</c>를 준다.",
+        "",
+        "각청의 검술에서 가장 빠른 초식. 하늘 위의 별들도 벨 수 있다고 한다"
+      ],
+      "lv20": "고유특성20: 하늘에 닿은 뇌벌",
+      "lv20_Explained": "뇌설이 존재하는 동안 다시 <c=#FFE48F>성신 회귀</c>를 발동하면, 5초 동안 각청은 <c=#87F6FD>번개 원소 부여</c>를 획득한다.",
+      "lv70": "고유특성70: 옥형의 품격",
+      "lv70_Explained": "<c=#FFE48F>천가 순유</c> 발동 시 각청의 치명타 확률이 15% 증가하고 원소 충전 효율이 15% 증가한다. 지속 시간: 8초.",
+      "lv0": "고유특성: 총무의 토지",
+      "lv0_Explained": "리월에서 탐색 임무 수행 시 소모하는 시간이 25% 감소한다.",
+      "C1": "제1단계 · 계뢰",
+      "C1_Explained": "뇌설이 존재하는 동안 다시 <c=#FFE48F>성신 회귀</c>를 발동하면, 각청이 사라지고 나타나는 위치에 공격력 50%의 <c=#87F6FD>번개 원소 범위 피해</c>를 준다.",
+      "C2": "제2단계 · 가연",
+      "C2_Explained": [
+        "각청의 <c=#FFE48F>일반 공격</c>과 <c=#FFE48F>강공격</c>이 <c=#87F6FD>번개 원소</c> 영향을 받은 적을 명중하면, 50%의 확률로 원소 입자가 생성된다.",
+        "해당 효과는 5초에 1번씩 발동한다."
+      ],
+      "C3": "제3단계 · 등루",
+      "C3_Explained": [
+        "<c=#FFE48F>천가 순유</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 조율",
+      "C4_Explained": "각청이 <c=#87F6FD>번개 원소 관련 반응</c>을 발동한 뒤 10초 동안 공격력이 25% 증가한다.",
+      "C5": "제5단계 · 이등",
+      "C5_Explained": [
+        "<c=#FFE48F>성신 회귀</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 염정",
+      "C6_Explained": [
+        "<c=#FFE48F>일반 공격</c>, <c=#FFE48F>강공격</c>, <c=#FFE48F>원소 전투 스킬</c> 혹은 <c=#FFE48F>원소 폭발</c> 사용 시, 각청은 <c=#87F6FD>번개 원소 피해 보너스</c>를 6% 획득한다. 지속 시간: 8초.",
+        "<c=#FFE48F>일반 공격</c>, <c=#FFE48F>강공격</c>, <c=#FFE48F>원소 전투 스킬</c> 혹은 <c=#FFE48F>원소 폭발</c>로 인한 효과는 각각 따로 존재한다."
+      ]
+    },
+    "rosaria": {
+      "name": "로자리아",
+      "title": "가시관의 은혜",
+      "normalAttacks": "일반 공격: 성당 창술",
+      "normalAttacks_Explained": "",
+      "normalAttack": "일반 공격",
+      "normalAttack_Explained": "창으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 전방으로 돌진하며 경로상의 적에게 피해를 준다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 죄를 삼키는 고해",
+      "elementalSkill_Explained": [
+        "로자리아가 빠르게 타깃의 뒤편으로 이동한 후 창으로 찌르고 휘둘러 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+        "몸집이 비교적 큰 적 뒤로는 이동할 수 없다.",
+        "",
+        "로자리아 수녀에게 하는 고해성사로는 죄를 용서받을 수 없다. 오히려 죄가 무거울수록, 뼈에 사무치는 처벌이 내려질 것이다"
+      ],
+      "elementalBurst": "원소 폭발: 죽음의 성례",
+      "elementalBurst_Explained": [
+        "로자리아만의 기도 의식. 무기를 휘둘러 주변의 적을 공격한 후, 혹한이 응집된 얼음 창으로 지면을 내리찍어 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+        "얼음 창은 존재하는 동안 간헐적으로 한기를 방출하여 주변의 적에게 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+        "",
+        "심판은 매우 번거롭기에 심판 과정을 건너뛰고 바로 종부성사를 거행한다. 원래부터 바람의 신을 믿지 않는 로자리아에게 이 일은 아주 간단하다"
+      ],
+      "lv20": "고유특성20: 참회의 경청자",
+      "lv20_Explained": "<c=#FFE48F>죄를 삼키는 고해</c>로 타깃의 뒤에서 공격할 시, 로자리아의 치명타 확률이 12% 증가한다. 지속 시간: 5초",
+      "lv70": "고유특성70: 어둠 속 조력자",
+      "lv70_Explained": [
+        "<c=#FFE48F>죽음의 성례</c> 발동 시, 로자리아 치명타 확률의 15%에 기반하여 주변에 있는 파티 내 모든 캐릭터의 (로자리아 본인 제외) 치명타 확률이 증가한다. 지속 시간: 10초.",
+        "이러한 방식으로 증가한 치명타 확률은 15%를 넘을 수 없다."
+      ],
+      "lv0": "고유특성: 야행",
+      "lv0_Explained": [
+        "야간(18시~6시)에 파티 내 모든 캐릭터의 이동속도가 10% 증가한다.",
+        "해당 효과는 비경, 영역 토벌, 나선 비경에서 적용되지 않으며, 같은 효과의 고유 특성과 중첩되지 않는다."
+      ],
+      "C1": "제1단계 · 죄의 속삭임",
+      "C1_Explained": "로자리아가 공격 시 치명타가 발생하면, 자신의 공격 속도가 10% 증가하고, <c=#FFE48F>일반 공격</c>으로 가하는 피해가 10% 증가한다. 지속시간: 4초.",
+      "C2": "제2단계 · 축복이 끊긴 땅",
+      "C2_Explained": "<c=#FFE48F>죽음의 성례</c>로 생성된 얼음 창의 지속 시간이 4초 증가한다.",
+      "C3": "제3단계 · 고해의 의식",
+      "C3_Explained": [
+        "<c=#FFE48F>죄를 삼키는 고해</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 고통의 은혜",
+      "C4_Explained": [
+        "<c=#FFE48F>죄를 삼키는 고해</c>로 치명타를 입히면, 로자리아 자신의 원소 에너지가 5pt 회복된다.",
+        "<c=#FFE48F>죄를 삼키는 고해</c>는 해당 효과를 매번 최대 1번 발동한다."
+      ],
+      "C5": "제5단계 · 종부성사",
+      "C5_Explained": [
+        "<c=#FFE48F>죽음의 성례</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 재판의 대리인",
+      "C6_Explained": "<c=#FFE48F>죽음의 성례</c> 공격은 적의 물리 내성을 20% 감소시킨다. 지속 시간: 10초."
+    },
+    "yanfei": {
+      "name": "연비",
+      "title": "순수한 지혜",
+      "normalAttacks": "일반 공격: 봉랍 인장",
+      "normalAttacks_Explained": "",
+      "normalAttack": "일반 공격",
+      "normalAttack_Explained": [
+        "연속으로 불덩이를 발사하여 최대 3단의 <c=#87F6FD>불 원소 피해</c>를 준다.",
+        "<c=#FFE48F>일반 공격</c>으로 적을 명중하면 연비에게 단화인 1개가 부여된다. 단화인은 처음에 최대 3개까지 보유할 수 있으며, 효과가 발동될 때마다 기존의 단화인 지속 시간이 리셋된다.",
+        "각각의 단화인은 연비의 스태미나 소모를 감소시키고, 연비가 퇴장할 때 사라진다."
+      ],
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": [
+        "스태미나를 소모해 짧은 영창 후, 모든 단화인을 소모해 전방에 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+        "소모된 단화인의 개수에 따라 이번 <c=#FFE48F>강공격</c>의 범위와 피해가 강화된다."
+      ],
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "불 원소의 힘을 모아 공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지시 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+      "elementalSkill": "원소 스킬: 단홍의 계약",
+      "elementalSkill_Explained": [
+        "화염을 소환해 <c=#87F6FD>불 원소 범위 피해</c>를 준다.",
+        "적을 명중하면 연비에게 최대 수량의 단화인이 부여된다.",
+        "",
+        "불에 그을린 인장엔 법적 효력 외에 연비 자신만의 부가 조항도 덧붙여져 있다. 왜냐하면 자연의 법칙은 총무부의 힘만으론 바뀔 수 없기 때문이다"
+      ],
+      "elementalBurst": "원소 폭발: 계약 성립",
+      "elementalBurst_Explained": "사나운 불길을 폭발 시켜 주변의 적에게 충격을 가해 <c=#87F6FD>불 원소 범위 피해</c>를 주고, 연비에게 최대 수량의 단화인과 이글이글 효과를 부여한다.",
+      "elementalBurstCombo": "이글이글",
+      "elementalBurstCombo_Explained": [
+        "이글이글 효과:",
+        "- 일정 시간마다 연비에게 단화인을 1개 부여한다.",
+        "- <c=#FFE48F>강공격</c>으로 가하는 피해가 증가한다.",
+        "이글이글 효과는 연비가 퇴장하거나 전투 불능 상태가 되었을 때 사라진다.",
+        "",
+        "「생사의 계약에 필요한 조항은 모두 갖춰졌어. 물론 죽는 건 너고 사는 건 나야!」"
+      ],
+      "lv20": "고유특성20: 관련 조항",
+      "lv20_Explained": "연비가 <c=#FFE48F>강공격</c>으로 단화인을 소모할 때 단화인 1개당 연비의 <c=#87F6FD>불 원소 피해 보너스</c>를 5% 증가시킨다. 지속시간: 6초. 해당 효과의 지속 시간 내에 다시 <c=#FFE48F>강공격</c>을 발동하면 기존의 효과는 사라진다.",
+      "lv70": "고유특성70: 법수의 눈",
+      "lv70_Explained": "연비가 발동한 <c=#FFE48F>강공격</c>이 적에게 치명타를 입힐 시, 추가로 공격력의 80%에 해당하는 <c=#87F6FD>불 원소 범위 피해</c>를 준다. 해당 피해는 <c=#FFE48F>강공격</c> 피해로 간주한다.",
+      "lv0": "고유특성: 박문강기",
+      "lv0_Explained": "미니맵에 주위의 <c=#FFE48F>리월 지역 특산물</c> 위치가 나타난다.",
+      "C1": "제1단계 · 법의 심판자",
+      "C1_Explained": "연비가 <c=#FFE48F>강공격</c> 시 단화인을 1개 보유할 때마다 영창 기간 동안 연비의 경직 저항력이 상승하고, 이번 <c=#FFE48F>강공격</c>의 스태미나 소모가 추가로 10% 감소한다.",
+      "C2": "제2단계 · 최종 해석권",
+      "C2_Explained": "연비가 <c=#FFE48F>강공격</c>으로 HP 50% 미만의 적을 공격 시 치명타 확률이 20% 증가한다.",
+      "C3": "제3단계 · 진리의 화염 인장",
+      "C3_Explained": [
+        "<c=#FFE48F>단홍의 계약</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 단서금철권",
+      "C4_Explained": [
+        "<c=#FFE48F>계약 성립</c> 발동 시:",
+        "HP 최대치의 45%에 해당하는 피해를 흡수하는 보호막을 생성한다. 지속 시간: 15초.",
+        "이 보호막은 <c=#87F6FD>불 원소 피해</c>에 대해 250%의 흡수 효과가 있다."
+      ],
+      "C5": "제5단계 · 준법 서약서",
+      "C5_Explained": [
+        "<c=#FFE48F>계약 성립</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 추가 조항",
+      "C6_Explained": "연비가 가질 수 있는 단화인의 최대 수량이 1개 증가한다."
+    },
+    "kaeya": {
+      "name": "케이야",
+      "title": "한풍의 검사",
+      "normalAttacks": "일반 공격: 의전 검술",
+      "normalAttacks_Explained": "",
+      "normalAttack": "일반 공격",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 순간적으로 전방을 향해 검을 2번 휘두른다.",
+      "plungeAttack": "낙하 공격",
+      "plungeAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고, 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 서리 엄습",
+      "elementalSkill_Explained": [
+        "얼어붙는듯한 냉기를 방출해 전방의 적에게 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+        "",
+        "보기에는 친절한 케이아지만 그 누구도 녹일 수 없는 단단하고 두꺼운 얼음이기도 하다"
+      ],
+      "elementalBurst": "원소 폭발: 살을 에는 윤무",
+      "elementalBurst_Explained": [
+        "공기 중의 서리를 모아 자신의 주위를 도는 3개의 얼음 기둥을 소환한다.",
+        "얼음 기둥이 존재하는 동안 캐릭터를 따라 이동하고 경로상의 적에게 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+        "",
+        "친절한 미소와 상냥한 말, 그리고 이 둘 아래 잠재되어 있는 가차없는 차가움. 이 모든 것들이 케이아의 무기이다"
+      ],
+      "lv20": "고유특성20: 냉혈의 검",
+      "lv20_Explained": "<c=#FFE48F>서리 엄습</c>이 적 1기에 명중할 때마다 케이아의 HP를 공격력의 15%만큼 회복한다.",
+      "lv70": "고유특성70: 빙연의 마음",
+      "lv70_Explained": [
+        "<c=#FFE48F>서리 엄습</c>이 적을 <c=#87F6FD>빙결</c>시키면 얼어붙은 적은 원소 입자를 추가로 드랍한다.",
+        "서리 엄습 1회로 최대 2개의 원소 입자가 추가로 드랍한다."
+      ],
+      "lv0": "고유특성: 숨겨진 실력",
+      "lv0_Explained": [
+        "파티 내 자신의 캐릭터의 대시 시 소모하는 스태미나가 20% 감소한다.",
+        "같은 효과의 고유 특성과 중첩되지 않는다."
+      ],
+      "C1": "제1단계 · 걸출한 혈통",
+      "C1_Explained": "<c=#87F6FD>얼음 원소</c>의 영향을 받은 적을 공격 시 <c=#FFE48F>일반 공격</c>과 <c=#FFE48F>강공격</c>의 치명타 확률이 15% 증가한다.",
+      "C2": "제2단계 · 끝없는 서리춤",
+      "C2_Explained": "<c=#FFE48F>살을 에는 윤무</c>의 지속 시간 내에 적을 처치할 시 지속 시간이 2.5초 연장된다. 최대 지속 시간: 15초.",
+      "C3": "제3단계 · 살을 에는 얼음놀이",
+      "C3_Explained": [
+        "<c=#FFE48F>서리 엄습</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 차가운 키스",
+      "C4_Explained": [
+        "케이아의 HP가 20% 미만일 때 자동으로 발동한다:",
+        "HP 최대치의 30%에 해당하는 피해를 흡수하는 보호막을 생성한다. 지속 시간: 20초.",
+        "이 보호막은 <c=#87F6FD>얼음 원소 피해</c>에 대해 250%의 흡수 효과가 있다.",
+        "해당 효과는 60초마다 1번 발동된다."
+      ],
+      "C5": "제5단계 · 차가운 포옹",
+      "C5_Explained": [
+        "<c=#FFE48F>살을 에는 윤무</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 회전하는 얼음",
+      "C6_Explained": "<c=#FFE48F>살을 에는 윤무</c>의 얼음 기둥 1개가 추가로 생성되고 발동 시 원소 에너지를 15pt 반환한다."
+    },
+    "qiqi": {
+      "name": "치치",
+      "title": "차가운 환혼의 밤",
+      "normalAttacks": "일반 공격: 운래의 고대 검법",
+      "normalAttacks_Explained": "",
+      "normalAttack": "일반 공격",
+      "normalAttack_Explained": "검으로 최대 5번 공격한다.",
+      "chargedAttack": "강공격",
+      "chargedAttack_Explained": "일정 스태미나를 소모해 순간적으로 전방을 향해 검을 2번 휘두른다.",
+      "plungingAttack": "낙하 공격",
+      "plungingAttack_Explained": "공중에서 땅을 내려찍어 경로상의 적을 공격하고, 착지 시 범위 피해를 준다.",
+      "elementalSkill": "원소 스킬: 선법·한병의 귀차",
+      "elementalSkill_Explained": "얼음과 피로 만들어진 부적으로 한병의 귀차를 소환해 주변의 적에게 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+      "elementalSkillSummon": "한병의 귀차",
+      "elementalSkillSummon_Explained": [
+        "- 치치의 <c=#FFE48F>일반 공격</c>과 <c=#FFE48F>강공격</c>이 명중 시 자신의 파티 내 모든 캐릭터 및 근처의 아군 캐릭터의 HP를 회복한다. 회복량은 치치의 공격력의 영향을 받는다.",
+        "- 일정 시간이 지날 때마다 현재 필드 위에 있는 자신의 캐릭터의 HP를 회복한다.",
+        "- 캐릭터를 따라다니며 경로상의 적에게 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+        "",
+        "「얘는 주로 온도가 올라서 부패하는 걸 방지해줘요... 음, 그러니까 백 선생님의 진귀한 약재들 말이에요」"
+      ],
+      "elementalBurst": "원소 폭발: 선법·구고도액",
+      "elementalBurst_Explained": "치치가 체내에 봉인된 선력을 해방해 주변의 적에게 도액 부적 표식을 남기고 <c=#87F6FD>얼음 원소 피해</c>를 준다.",
+      "elementalBurstCombo": "도액 부적",
+      "elementalBurstCombo_Explained": [
+        "도액 부적 표식이 있는 적에게 피해를 주면 캐릭터의 HP를 회복한다.",
+        "",
+        "「본명, 구고도액진군. 죽다 살아난 해골 동자」——치치는 이 말을 기억하지 못한다"
+      ],
+      "lv20": "고유특성20: 생명 연장의 묘법",
+      "lv20_Explained": "<c=#FFE48F>선법·한병의 귀차</c> 상태의 캐릭터가 원소 반응을 일으키면 받는 치유 보너스가 20% 상승한다. 지속 시간: 8초.",
+      "lv70": "고유특성70: 우연히 얻은 옥첨",
+      "lv70_Explained": "치치의 <c=#FFE48F>일반 공격</c>과 <c=#FFE48F>강공격</c>이 적을 명중 시 50%의 확률로 적에게 도액 부적을 한 장 부여한다. 지속 시간: 6초. 해당 효과는 30초마다 1번 발동한다.",
+      "lv0": "고유특성: 지나간 기억",
+      "lv0_Explained": "미니맵에 주위의 <c=#FFE48F>리월 지역 특산물</c> 위치가 나타난다.",
+      "C1": "제1단계 · 한고의 회향",
+      "C1_Explained": "한병의 귀차의 공격이 도액 부적 표식이 있는 적을 명중 시 치치의 원소 에너지를 2pt 회복한다.",
+      "C2": "제2단계 · 뼛속까지 스며드는 한기",
+      "C2_Explained": "<c=#87F6FD>얼음 원소</c>의 영향을 받은 적을 공격 시 치치가 <c=#FFE48F>일반 공격</c>과 <c=#FFE48F>강공격</c>으로 가하는 피해가 15% 증가한다.",
+      "C3": "제3단계 · 승천 보고(宝诰)",
+      "C3_Explained": [
+        "<c=#FFE48F>선법·구고도액</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C4": "제4단계 · 중생을 압도하는 천위",
+      "C4_Explained": "도액 부적 표식이 있는 적은 공격력이 20% 감소한다.",
+      "C5": "제5단계 · 피어난 홍련",
+      "C5_Explained": [
+        "<c=#FFE48F>선법·한병의 귀차</c>의 스킬 레벨+3",
+        "최대 Lv.15까지 상승"
+      ],
+      "C6": "제6단계 · 기사회해",
+      "C6_Explained": [
+        "<c=#FFE48F>선법·구고도액</c> 발동 시 근처 파티 내 전투 불능이 된 캐릭터를 부활시키고 HP를 50% 회복한다.",
+        "해당 효과는 15분마다 1번 발동한다."
+      ]
+    }
+  },
+  "weapon": {
+    "rust": "녹슨 활",
+    "sacrificialBow": "제례활",
+    "demonSlayerBow": "파마궁",
+    "amosBow": "아모스의 활",
+    "elegyForTheEnd": "종말 탄식의 노래",
+    "thunderingPulse": "비뢰의 고동",
+    "skywardSpine": "천공의 마루",
+    "primordialJadeWingedSpear": "화박연",
+    "staffOfHoma": "호마의 창",
+    "sacrificialSword": "제례검",
+    "ironSting": "강철벌침",
+    "primordialJadeCutter": "반암결록",
+    "freedomSworn": "자유의 서약",
+    "mistsplittersReflection": "안개를 가르는 회광",
+    "wolfsGravestone": "늑대의 말로",
+    "skywardPride": "천공의 긍지",
+    "songOfBrokenPines": "송뢰가 울릴 무렵",
+    "sacrificialFragments": "제례의 악장",
+    "skywardAtlas": "천공의 두루말이",
+    "memoryOfDust": "속세의 자물쇠",
+    "theWidsith": "음유시인의 악장",
+    "talents": {
+      "flyingSeconds": "아모스의 활: 잊지 않은 포부",
+      "mistsplittersEdge": "안개를 가르는 회광: 무절(霧切) 어검"
+    }
+  },
+  "artifact": {
+    "gradiatorsFinale": "검투사의 피날레",
+    "wanderersTroupe": "대지를 유랑하는 악단",
+    "paleFlame": "창백의 화염",
+    "thunderingFury": "번개 같은 분노",
+    "viridescentVenerer": "청록색 그림자",
+    "archaicPetra": "유구한 반암",
+    "crimsonWitchOfFlames": "불타오르는 화염의 마녀",
+    "noblesseOblige": "옛 왕실의 의식",
+    "blizzardStrayer": "얼음바람 속에서 길잃은 용사",
+    "heartOfDepth": "몰락한 마음",
+    "glacierAndSnowfield": "빙하와 눈의 모래",
+    "retracingBolide": "날아오르는 유성",
+    "thundersoother": "뇌명을 평정한 존자",
+    "lavawalker": "불 위를 걷는 현인",
+    "tenacityOfTheMillelith": "견고한 천암",
+    "reminiscenceOfShime": "추억의 시메카자리",
+    "sealOfInsulation": "절연의 기치"
+  }
+}
