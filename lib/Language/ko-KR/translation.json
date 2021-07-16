@@ -1,5 +1,6 @@
 {
   "general": {
+    "appName": "감우노트",
     "status": "스테이터스",
     "characters": "캐릭터"
   },
@@ -80,6 +81,7 @@
     "talentLvAdd": "특성 레벨+{{add}}",
     "constellations": "운명의 자리",
     "constellationLv": "운명의 자리 - 제<c=#0CFAFF>{{level}}</c>단계",
+    "null": {"name": ""},
     "ganyu": {
       "name": "감우",
       "title": "리월의 수호자",

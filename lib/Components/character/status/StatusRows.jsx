@@ -38,7 +38,7 @@ const renderSuggestStatValue = ({char, item, onChange}) => {
   return item.value && <>
     <StatusValue>{i18next.t(`character.stat.${item.value}`)}</StatusValue>
     <TouchableOpacity
-      style={{cursor: 'pointer', alignSelf: 'baseline'}}
+      style={{alignSelf: 'baseline'}}
       onPress={() => {}}
     >
       <StatusValueDecrease2 style={{marginLeft: 8, marginRight: 2}}>-</StatusValueDecrease2>
@@ -46,7 +46,7 @@ const renderSuggestStatValue = ({char, item, onChange}) => {
     </TouchableOpacity>
     <StatusValueFlexless>{10}</StatusValueFlexless>
     <TouchableOpacity
-      style={{cursor: 'pointer', alignSelf: 'baseline'}}
+      style={{alignSelf: 'baseline'}}
       onPress={() => {}}
     >
       <StatusValueDecrease2 style={{marginLeft: 2}}>+</StatusValueDecrease2>

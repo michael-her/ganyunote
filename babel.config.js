@@ -11,8 +11,8 @@ module.exports = function(api) {
             "@tw": "./lib/Styles/tailwind"
           }
         }
-      ]
-      //'@babel/plugin-transform-template-literals',
+      ],
+      '@babel/plugin-transform-template-literals',
     ]
   };
 };

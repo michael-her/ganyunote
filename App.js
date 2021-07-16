@@ -9,7 +9,7 @@ import translationKr from './lib/Language/ko-KR/translation.json'
 import { Provider } from 'react-redux';
 import { theme, paper } from './lib/Styles'
 import store from './lib/Models/store'
-import UI from './lib/Components/UI'
+import { UI } from './lib/Components/UI'
 
 i18next.addResourceBundle('ko-KR', 'translation', translationKr, true, true)
 

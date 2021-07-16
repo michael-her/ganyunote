@@ -1,5 +1,5 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import _ from 'lodash'
 import tw from '@tw'
 
@@ -10,9 +10,14 @@ import { CharacterSetting } from './CharacterSetting'
 import { CharacterSpec } from './CharacterSpec'
 import { SheetTitle, SheetRow } from './common/styled'
 
-const CharacterView = ({
-  route, navigation, char, onUpdateChar, onUpdateTalent, onChangeWeapon, onChangeArtifact
-}) => {
+export const CharacterView = ({route, navigation}) => {
+  const char = useSelector(state => state.app.character[state.app.selectedChar])
+  const dispatch = useDispatch()
+  const onUpdateChar = (...props) => dispatch(updateChar(...props))
+  const onUpdateTalent = (...props) => dispatch(updateTalent(...props))
+  const onChangeWeapon = (...props) => dispatch(changeWeapon(...props))
+  const onChangeArtifact = (...props) => dispatch(changeArtifact(...props))
+  
   const selectStat = path => item => {
     if (['artifact', 'artifactSub'].includes(item.name)) {
       const {artifact, artifactSub} = {
@@ -60,13 +65,3 @@ const CharacterView = ({
     </div>
   )
 }
-
-export default connect(
-  (state, {route: {params: {selectedChar}}}) => ({char: state.app.character[selectedChar]}),
-  {
-    onUpdateChar: updateChar,
-    onUpdateTalent: updateTalent,
-    onChangeWeapon: changeWeapon,
-    onChangeArtifact: changeArtifact,
-  }
-)(CharacterView)

@@ -1,25 +1,22 @@
 import React from 'react'
 import styled from "styled-components/native"
 import i18next from "i18next"
+import tw, {Text} from '@tw'
 
-const StyledTalent = styled.View`
-  margin-left: 16px;
-`
-
-const StyledTalentName = styled.Text`
-  margin-top: 16px;
-  font-family: yumichael;
-  font-size: 1em;
-  color: #FFE48F;
-`
-
-const StyledTalentExplains = styled.Text`
+// const StyledText = styled.Text`
+//   margin-top: 8px;
+//   line-height: 1.25em;
+//   color: ${props => props.theme.headerCellTextColor};
+// `
+const StyledText = styled.Text`
   margin-top: 8px;
   font-family: yumichael;
   font-size: 1em;
   line-height: 1.25em;
   color: ${props => props.theme.headerCellTextColor};
 `
+
+const style = tw`mt-4 leading-6 text-white`
 
 export const TalentExplains = ({explains}) => {
   explains = Array.isArray(explains) ? explains : [explains]
@@ -34,29 +31,29 @@ export const TalentExplains = ({explains}) => {
     const from_ = p.indexOf(match, from)
     to = p.indexOf(ender, from_ + match.length)
     children.push(
-      <StyledTalentExplains key={children.length}>
+      <Text style={style} key={children.length}>
         {p.substring(from, from_)}
-      </StyledTalentExplains>
+      </Text>
     )
     const color = match.substring(3, match.length - 1)
     const colored = p.substring(from_ + match.length, to)
     children.push(
-      <StyledTalentExplains key={children.length} style={{color}}>
+      <Text key={children.length} style={{...style, color}}>
         {colored}
-      </StyledTalentExplains>
+      </Text>
     )
     // console.log('format', {colored, color})
     from = to + ender.length
   })
   children.push(
-    <StyledTalentExplains key={children.length}>
+    <Text key={children.length} style={style}>
       {p.substring(from)}
-    </StyledTalentExplains>
+    </Text>
   )
   return (
-    <StyledTalentExplains>
+    <Text style={style}>
       {children}
-    </StyledTalentExplains>
+    </Text>
   )
 }
 
@@ -64,11 +61,11 @@ export const TalentItem = ({charName, talentName, indent = 0}) => {
   const talentName_ = i18next.t(`character.${charName}.${talentName}`)
   const talentExplained_ = i18next.t(`character.${charName}.${talentName}_Explained`, { returnObjects: true })
   return (
-    <StyledTalent style={{marginLeft: indent}}>
-      <StyledTalentName>{talentName_}</StyledTalentName>
+    <div style={tw`flex flex-col ml-${indent}`}>
+      <Text style={tw`mt-8 text-base leading-4 text-salomie`}>{talentName_}</Text>
       <If condition={talentExplained_ !== ""}>
         <TalentExplains explains={talentExplained_}/>
       </If>
-    </StyledTalent>
+    </div>
   )
 }

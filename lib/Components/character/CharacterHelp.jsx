@@ -21,7 +21,7 @@ export const CharacterHelp = ({char}) => {
             key={talentIndex++}
             charName={char.name}
             talentName={subTalent}
-            indent={16}
+            indent={4}
           />
         </For>
       </For>

@@ -1,28 +1,8 @@
 import React from 'react'
-import { StyleSheet } from 'react-native'
-import styled from "styled-components/native";
-import { Text, Appbar } from 'react-native-paper'
-import { textColor } from '../Styles';
+import { Appbar } from 'react-native-paper'
+import tw, {getColor, Text} from '@tw'
 
-const StyledHeader = styled.View`
-  height: 48;
-  background-color: #36384A;
-  flex-direction: row;
-  align-items: center;
-`
-
-const StyledButton = styled.Button`
-  margin-right: 8px;
-`
-
-const NavTitle = styled.Text`
-  font-size: 16px;
-  font-family: yumichael;
-  margin-left: ${props => props.hasAction ? 0 : 16}px;
-  color: ${props => props.theme.textColor};
-`
-
-const NavHeader = ({ scene, previous, navigation }) => {
+export const NavHeader = ({ scene, previous, navigation }) => {
   const { options } = scene.descriptor;
   const title =
     options.headerTitle !== undefined
@@ -32,17 +12,12 @@ const NavHeader = ({ scene, previous, navigation }) => {
       : scene.route.name;
 
   return (
-    <StyledHeader>
+    <div style={tw`flex flex-row items-center h-9 bg-oxfordblue`}>
       {previous
-        ? <Appbar.BackAction color={textColor} onPress={navigation.goBack} />
+        ? <Appbar.BackAction style={tw`m-0 ml-2`} color={getColor('text-white')} onPress={navigation.goBack} />
         : undefined
       }
-      <NavTitle hasAction={previous}>{title}</NavTitle>
-    </StyledHeader>
-      // style={options.headerStyle}
+      <Text style={tw`ml-${previous ? 0 : 4} text-white text-base leading-9`}>{title}</Text>
+    </div>
   );
 }
-
-NavHeader.displayName = 'NavHeader'
-
-export default NavHeader

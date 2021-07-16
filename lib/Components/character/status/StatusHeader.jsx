@@ -2,6 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 import { TouchableOpacity } from 'react-native'
 import i18next from "i18next"
+import tw, { Text } from '@tw'
 
 import { SELECTABLE_COLOR, StatusName } from '../common/styled'
 import { contentFactory } from '../common/content-factory'
@@ -23,7 +24,7 @@ export const StatusHeader = ({item, onToggleOpen, style}) => {
   )
   return onToggleOpen ? (
     <TouchableOpacity
-      style={{cursor: 'pointer', alignItems: 'flex-end'}}
+      style={tw`items-end`}
       onPress={() => onToggleOpen(item.original)}
     >
       {header}

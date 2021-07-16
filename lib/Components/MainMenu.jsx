@@ -1,13 +1,8 @@
 import * as React from 'react'
 import { StyleSheet } from 'react-native'
 import styled from 'styled-components/native'
-import { Appbar, Searchbar, useTheme, Text } from 'react-native-paper'
-
-const Header = styled.Text`
-  color: ${props => props.theme.textColor};
-  font-family: yumichael;
-  font-size: 16px;
-`
+import { Appbar, Searchbar, useTheme } from 'react-native-paper'
+import tw, { Text } from '@tw'
 
 const SearchWrapper = styled.View`
   margin-left: ${props => props.theme.appbar.margin};
@@ -19,21 +14,15 @@ const SearchWrapper = styled.View`
   }
 `
 
-const styles = StyleSheet.create({
-  appbar: {
-    backgroundColor: '#36384A',
-  }
-});
-
 const MainMenu = () => {
   const [searchQuery, setSearchQuery] = React.useState('')
   return (
-    <Appbar dark style={styles.appbar}>
+    <Appbar dark style={tw`h-9 bg-oxfordblue`}>
       <Appbar.Action
         icon="hamburger"
         onPress={() => console.log('Pressed archive')}
       />
-      <Header>감우노트</Header>
+      <Text style={tw`text-base leading-9 text-white`}>감우노트</Text>
       {/* <SearchWrapper>
         <Searchbar
           className="searchbar"
