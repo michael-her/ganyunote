@@ -1,8 +1,12 @@
 module.exports = {
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // false, // or 'media' or 'class'
   theme: {
     extend: {},
+    colors: {
+      mirage: '#1A202C',
+      oxfordblue: '#2D3748',
+    },
   },
   variants: {
     extend: {},

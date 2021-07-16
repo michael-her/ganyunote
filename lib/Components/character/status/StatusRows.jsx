@@ -128,7 +128,7 @@ export const StatusRows = ({char, stats, onChange}) => {
     ? ({name: stats[p].stat, value: stats[p].value, original: p})
     : {name: p, value: stats[p], original: p})
   .map(item => {
-    return item.name.startsWith('sep_') ? (<SheetRow />) : (
+    return item.name.startsWith('sep_') ? (<SheetRow key={item.name}/>) : (
       <React.Fragment key={item.original}>
         <StatusRow key={item.original}>
           <StatusHeader item={item} onToggleOpen={toggleOpen}/>

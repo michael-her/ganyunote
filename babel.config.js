@@ -3,7 +3,16 @@ module.exports = function(api) {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
-      'babel-plugin-jsx-control-statements'
+      'babel-plugin-jsx-control-statements',
+      [
+        "module-resolver", {
+          "root": ["./lib"],
+          "alias": {
+            "@tw": "./lib/Styles/tailwind"
+          }
+        }
+      ]
+      //'@babel/plugin-transform-template-literals',
     ]
   };
 };

@@ -7,17 +7,11 @@ import { Provider as PaperProvider } from 'react-native-paper'
 import i18next from 'i18next'
 import translationKr from './lib/Language/ko-KR/translation.json'
 import { Provider } from 'react-redux';
-import {create} from 'tailwind-rn'
-import styles from './styles.json';
-
 import { theme, paper } from './lib/Styles'
 import store from './lib/Models/store'
 import UI from './lib/Components/UI'
 
 i18next.addResourceBundle('ko-KR', 'translation', translationKr, true, true)
-
-const {tailwind, getColor} = create(styles);
-export {tailwind, getColor}
 
 export default function App() {
   const [fontsLoaded] = useFonts({

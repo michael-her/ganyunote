@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import tw from 'tailwind-rn'
 import _ from 'lodash'
+import tw from '@tw'
 
 import { themeLT } from '../../Styles/base'
 import { reselectTalent } from '../../Models/selectors'
@@ -80,12 +80,12 @@ const ToggleRows = ({char, onChange}) => {
 export const CharacterSetting = ({
   char, onSelectStat, onToggleTalent
 }) => {
-  const {leftStats} = char
+  const {leftStats, mainTalent} = char
   return (
-    <div style={tw('flex-1')}>
-      <StatusRows char={char} stats={{'mainTalent': char.mainTalent}} onChange={onSelectStat()}/>
-      <StatusRows char={char} stats={leftStats} onChange={onSelectStat("leftStats")}/>
-      <ToggleRows char={char} onChange={onToggleTalent} />
+    <div style={tw`flex-1`}>
+      <StatusRows key='mainTalent' {...{char, stats: {mainTalent}, onChange: onSelectStat()}}/>
+      <StatusRows key='setting' {...{char, stats: leftStats, onChange: onSelectStat("leftStats")}}/>
+      <ToggleRows key='toggle' {...{char, onChange: onToggleTalent}}/>
     </div>
   )
 }

@@ -41,3 +41,4 @@
 [0708/030813.465:ERROR:process_info.cc(556)] ReadMemoryInfo failed
 [0708/030813.465:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
 [0708/030813.465:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 기존 프로세스에 액세스하려고 했습니다. (0xc000010a)
+[0716/054429.763:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)

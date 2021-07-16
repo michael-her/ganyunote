@@ -1,14 +1,14 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import _ from 'lodash'
-import tw from 'tailwind-rn'
+import tw from '@tw'
 
 import { changeArtifact, changeWeapon, updateChar, updateTalent } from '../../Models/actions'
 
 import { CharacterHelp } from './CharacterHelp'
 import { CharacterSetting } from './CharacterSetting'
 import { CharacterSpec } from './CharacterSpec'
-import { CharacterPage, SheetTitle, SheetRow } from './common/styled'
+import { SheetTitle, SheetRow } from './common/styled'
 
 const CharacterView = ({
   route, navigation, char, onUpdateChar, onUpdateTalent, onChangeWeapon, onChangeArtifact
@@ -49,15 +49,15 @@ const CharacterView = ({
     onUpdateTalent(char.name, props)
   }
   return (
-    <CharacterPage>
+    <div style={tw`flex-1 p-2 overflow-scroll bg-mirage`}>
       <SheetTitle>스테이터스</SheetTitle>
-      <div style={tw('flex w-full flex-row')}>
+      <div style={tw`flex flex-row w-full`}>
         <CharacterSetting char={char} onSelectStat={selectStat} onToggleTalent={toggleTalent}/>
         <CharacterSpec char={char} onSelectStat={selectStat}/>
       </div>
       <SheetRow />
       <CharacterHelp char={char}/>
-    </CharacterPage>
+    </div>
   )
 }
 
