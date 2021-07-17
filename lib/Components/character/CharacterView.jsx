@@ -1,14 +1,16 @@
 import React from 'react'
+import { View } from 'react-native'
 import { useSelector, useDispatch } from 'react-redux'
 import _ from 'lodash'
-import tw from '@tw'
+import tw, { Text } from '@tw'
 
 import { changeArtifact, changeWeapon, updateChar, updateTalent } from '../../Models/actions'
 
 import { CharacterHelp } from './CharacterHelp'
 import { CharacterSetting } from './CharacterSetting'
 import { CharacterSpec } from './CharacterSpec'
-import { SheetTitle, SheetRow } from './common/styled'
+import { sheetTitle, sheetRow } from './common/styles'
+import i18next from 'i18next'
 
 export const CharacterView = ({route, navigation}) => {
   const char = useSelector(state => state.app.character[state.app.selectedChar])
@@ -54,14 +56,14 @@ export const CharacterView = ({route, navigation}) => {
     onUpdateTalent(char.name, props)
   }
   return (
-    <div style={tw`flex-1 p-2 overflow-scroll bg-mirage`}>
-      <SheetTitle>스테이터스</SheetTitle>
-      <div style={tw`flex flex-row w-full`}>
+    <View style={tw`flex-1 p-2 overflow-scroll bg-mirage`}>
+      <Text style={sheetTitle}>{i18next.t('general.status')}</Text>
+      <View style={tw`flex flex-row w-full`}>
         <CharacterSetting char={char} onSelectStat={selectStat} onToggleTalent={toggleTalent}/>
         <CharacterSpec char={char} onSelectStat={selectStat}/>
-      </div>
-      <SheetRow />
+      </View>
+      <View style={sheetRow} />
       <CharacterHelp char={char}/>
-    </div>
+    </View>
   )
 }

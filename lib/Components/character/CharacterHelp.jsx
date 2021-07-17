@@ -1,15 +1,17 @@
 import React from 'react'
 import i18next from "i18next"
+import { View } from 'react-native'
+import { Text } from '@tw'
 
 import { TalentItem } from './help/TalentItem'
-import { SheetTitle, SheetRow } from './common/styled'
+import { sheetTitle, sheetRow, StatusRow } from './common/styles'
 
 export const CharacterHelp = ({char}) => {
   const {talents: {skills}} = char
   let talentIndex = 0
   return (
     <>
-      <SheetTitle>{i18next.t('character.talent')}</SheetTitle>
+      <Text style={sheetTitle}>{i18next.t('character.talent')}</Text>
       <For each="talent" of={Object.keys(skills)}>
         <TalentItem
           key={talentIndex++}
@@ -32,8 +34,8 @@ export const CharacterHelp = ({char}) => {
           talentName={talent}
         />
       </For>
-      <SheetRow />
-      <SheetTitle>{i18next.t('character.constellations')}</SheetTitle>
+      <View style={sheetRow}/>
+      <Text style={sheetTitle}>{i18next.t('character.constellations')}</Text>
       <For each="talent" of={['C1', 'C2', 'C3', 'C4', 'C5', 'C6']}>
         <TalentItem
           key={(talentIndex = talentIndex + 1)}

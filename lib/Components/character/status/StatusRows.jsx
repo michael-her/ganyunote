@@ -1,56 +1,40 @@
 import React, {useState} from 'react'
-import i18next from 'i18next'
-import { TouchableOpacity } from 'react-native'
-import styled from 'styled-components/native'
+import { TouchableOpacity, View } from 'react-native'
 import _ from 'lodash'
+import i18next from 'i18next'
+import tw, { Text } from '@tw'
 
 import { calcTalentDmg } from '../../../Models/formulars'
 import { formatComma } from '../../../Utils/utils'
 import {
-  SELECTABLE_COLOR,
-  StatusRow,
-  StatusValue,
-  ListItemDealing,
-  StatusAdd,
-  StatusValueFlexless,
-  SheetRow,
-} from '../common/styled'
+  sheetRow,
+  rowValue,
+  listItemDealing,
+  rowValueAdd,
+  rowValueFlexless,
+} from '../common/styles'
 import { StatusHeader } from './StatusHeader'
 import { StatusContentsToggle } from './StatusContentsToggle'
 
-const StatusValueDecrease2 = styled.Text`
-  padding: 1px;
-  // border: solid;
-  // border-width: 2px;
-  // border-color: #222431;
-  border-radius: 50%
-  color: white;
-  background-color: #7C44A0; // ${SELECTABLE_COLOR}; // #A777C5;
-  width: 20px;
-  height: 20px;
-
-  font-family: yumichael;
-  font-size: 1em;
-  text-align: center;
-`
-
 const renderSuggestStatValue = ({char, item, onChange}) => {
   return item.value && <>
-    <StatusValue>{i18next.t(`character.stat.${item.value}`)}</StatusValue>
+    <Text style={rowValue}>{i18next.t(`character.stat.${item.value}`)}</Text>
     <TouchableOpacity
-      style={{alignSelf: 'baseline'}}
+      style={tw`self-baseline`}
       onPress={() => {}}
     >
-      <StatusValueDecrease2 style={{marginLeft: 8, marginRight: 2}}>-</StatusValueDecrease2>
-      {/* <StatusValueDecrease name="md-remove-circle" size={16} style={{marginLeft: 4, marginRight: 2}}/> */}
+      <Text
+        style={tw`w-5 h-5 p-px ml-2 mr-1 text-base leading-4 text-center text-white bg-bossanova-hl rounded-1/2`}
+      >-</Text>
     </TouchableOpacity>
-    <StatusValueFlexless>{10}</StatusValueFlexless>
+    <Text style={rowValueFlexless}>{10}</Text>
     <TouchableOpacity
-      style={{alignSelf: 'baseline'}}
+      style={tw`self-baseline`}
       onPress={() => {}}
     >
-      <StatusValueDecrease2 style={{marginLeft: 2}}>+</StatusValueDecrease2>
-      {/* <StatusValueDecrease name="md-add-circle" size={16} style={{marginLeft: 2}}/> */}
+      <Text
+        style={tw`w-5 h-5 p-px ml-1 text-base leading-4 text-center text-white bg-bossanova-hl rounded-1/2`}
+      >+</Text>
     </TouchableOpacity>
   </>
 }
@@ -58,7 +42,7 @@ const renderSuggestStatValue = ({char, item, onChange}) => {
 const headerValueFactory = {
   // eslint-disable-next-line react/display-name
   mainTalent: ({char, item}) => <>
-    <ListItemDealing>
+    <Text style={listItemDealing}>
       {formatComma(calcTalentDmg(char,
         {
           parent: char.mainTalent.parent,
@@ -66,36 +50,36 @@ const headerValueFactory = {
         },
         {allCrit: true}
       ))}
-    </ListItemDealing>
-    <StatusValueFlexless>
+    </Text>
+    <Text style={rowValueFlexless}>
       {item.value.name.match(/^hit[\d]/)
         ? i18next.t(`character.${char.name}.normalAttack`) + '-' + _.last(item.value.name)
         : i18next.t(`character.${char.name}.${item.value.name}`)
       }
-    </StatusValueFlexless>
+    </Text>
   </>,
   // eslint-disable-next-line react/display-name
   weapon: ({char, item}) => (
-    <StatusValue>{i18next.t(`weapon.${item.value}`)}</StatusValue>
+    <Text style={rowValue}>{i18next.t(`weapon.${item.value}`)}</Text>
   ),
   // eslint-disable-next-line react/display-name
   artifact: ({char, item}) => (
-    <StatusValue style={{
+    <Text style={[rowValue, {
       whiteSpace: 'nowrap',
       overflow: 'hidden',
-      textOverflow: 'ellipsis'}}
+      textOverflow: 'ellipsis'}]}
     >
       {i18next.t(`artifact.${item.value}`)}
-    </StatusValue>),
+    </Text>),
   // eslint-disable-next-line react/display-name
   artifactSub: ({char, item}) => (
-    <StatusValue style={{
+    <Text style={[rowValue, {
       whiteSpace: 'nowrap',
       overflow: 'hidden',
-      textOverflow: 'ellipsis'}}
+      textOverflow: 'ellipsis'}]}
     >
       {i18next.t(`artifact.${item.value}`)}
-    </StatusValue>),
+    </Text>),
   suggestStat1: renderSuggestStatValue,
   suggestStat2: renderSuggestStatValue,
   suggestStat3: renderSuggestStatValue,
@@ -110,11 +94,11 @@ const StatusHeaderValue = ({char, item}) => {
   ) : (
     <Choose>
       <When condition={_.isUndefined(item.value.base) || _.isUndefined(item.value.add)}>
-        <StatusValue>{`${item.value}${suffix}`}</StatusValue>
+        <Text style={rowValue}>{`${item.value}${suffix}`}</Text>
       </When>
       <Otherwise>
-        <StatusValue>{`${item.value.base}${suffix}`}</StatusValue>
-        <StatusAdd>{`+${item.value.add}${suffix}`}</StatusAdd>
+        <Text style={rowValue}>{`${item.value.base}${suffix}`}</Text>
+        <Text style={rowValueAdd}>{`+${item.value.add}${suffix}`}</Text>
       </Otherwise>
     </Choose>
   )
@@ -128,12 +112,12 @@ export const StatusRows = ({char, stats, onChange}) => {
     ? ({name: stats[p].stat, value: stats[p].value, original: p})
     : {name: p, value: stats[p], original: p})
   .map(item => {
-    return item.name.startsWith('sep_') ? (<SheetRow key={item.name}/>) : (
+    return item.name.startsWith('sep_') ? (<View style={sheetRow} key={item.name}/>) : (
       <React.Fragment key={item.original}>
-        <StatusRow key={item.original}>
+        <View style={sheetRow} key={item.original}>
           <StatusHeader item={item} onToggleOpen={toggleOpen}/>
           <StatusHeaderValue {...{char, item}}/>
-        </StatusRow>
+        </View>
         <StatusContentsToggle
           key={`${item.original}_contents`}
           char={char}

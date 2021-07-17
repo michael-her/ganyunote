@@ -1,4 +1,5 @@
 import React from 'react'
+import { View } from 'react-native'
 import styled from "styled-components/native"
 import i18next from "i18next"
 import tw, {Text} from '@tw'
@@ -61,11 +62,11 @@ export const TalentItem = ({charName, talentName, indent = 0}) => {
   const talentName_ = i18next.t(`character.${charName}.${talentName}`)
   const talentExplained_ = i18next.t(`character.${charName}.${talentName}_Explained`, { returnObjects: true })
   return (
-    <div style={tw`flex flex-col ml-${indent}`}>
+    <View style={tw`flex flex-col ml-${indent}`}>
       <Text style={tw`mt-8 text-base leading-4 text-salomie`}>{talentName_}</Text>
       <If condition={talentExplained_ !== ""}>
         <TalentExplains explains={talentExplained_}/>
       </If>
-    </div>
+    </View>
   )
 }

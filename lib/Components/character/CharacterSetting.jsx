@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
+import { View } from 'react-native'
 import _ from 'lodash'
-import tw from '@tw'
+import tw, { getBgColor, Text } from '@tw'
 
-import { themeLT } from '../../Styles/base'
 import { reselectTalent } from '../../Models/selectors'
 import {
-  SELECTABLE_COLOR,
-  StatusValue,
-  StatusRow,
-  StatusContents,
-} from './common/styled'
+  sheetRow,
+  rowValue,
+  rowContents,
+} from './common/styles'
 import { StatusRows } from './status/StatusRows'
 import { StatusHeader } from './status/StatusHeader'
 import { StatusContentsToggle } from './status/StatusContentsToggle'
@@ -17,11 +16,11 @@ import { TalentExplains } from './help/TalentItem'
 
 const StatusTalentToggle = ({char, item, opened, onChange}) => {
   return (
-    <StatusContents style={opened ? {minHeight: 20} : {height: 0, border: 'none'}}>
+    <View style={[rowContents, opened ? tw`min-h-5` : tw`h-0 border-none`, {transition: 'height 0.25s ease'}]}>
       {opened && item.explains &&
         <TalentExplains explains={item.explains}/>
       }
-    </StatusContents>
+    </View>
   )
 }
 
@@ -38,14 +37,14 @@ const ToggleRows = ({char, onChange}) => {
     return (
       <React.Fragment key={talent.original}>
         <If condition={!_.isUndefined(talent.toggle)}>
-          <StatusRow key={talent.original}>
+          <View style={sheetRow} key={talent.original}>
             <StatusHeader
               item={talent}
               onToggleOpen={toggleTalent}
-              style={{backgroundColor: talent.toggle ? SELECTABLE_COLOR: themeLT.headerCellIconColor}}
+              style={getBgColor(talent.toggle ? 'bossanova-900' : 'coolgray-500')}
             />
-            <StatusValue>{talent.toggle ? 'ON' : 'OFF'}</StatusValue>
-          </StatusRow>
+            <Text style={rowValue}>{talent.toggle ? 'ON' : 'OFF'}</Text>
+          </View>
           <StatusTalentToggle
             key={`${talent.original}_contents`}
             char={char}
@@ -55,14 +54,14 @@ const ToggleRows = ({char, onChange}) => {
           />
         </If>
         <If condition={!_.isUndefined(talent.stacks)}>
-          <StatusRow key={talent.original}>
+          <View style={sheetRow} key={talent.original}>
             <StatusHeader
               item={talent}
               onToggleOpen={toggleOpen}
-              style={{backgroundColor: talent.stacks > 0 ? SELECTABLE_COLOR: themeLT.headerCellIconColor}}
+              style={getBgColor(talent.stacks ? 'bossanova-900' : 'coolgray-500')}
             />
-            <StatusValue>{`${talent.stacks > 0 ? talent.stacks : 'OFF'}`}</StatusValue>
-          </StatusRow>
+            <Text style={rowValue}>{`${talent.stacks > 0 ? talent.stacks : 'OFF'}`}</Text>
+          </View>
           <StatusContentsToggle
             key={`${talent.original}_contents`}
             contentType="stacks"
@@ -82,10 +81,10 @@ export const CharacterSetting = ({
 }) => {
   const {leftStats, mainTalent} = char
   return (
-    <div style={tw`flex-1`}>
+    <View style={tw`flex-1`}>
       <StatusRows key='mainTalent' {...{char, stats: {mainTalent}, onChange: onSelectStat()}}/>
       <StatusRows key='setting' {...{char, stats: leftStats, onChange: onSelectStat("leftStats")}}/>
       <ToggleRows key='toggle' {...{char, onChange: onToggleTalent}}/>
-    </div>
+    </View>
   )
 }

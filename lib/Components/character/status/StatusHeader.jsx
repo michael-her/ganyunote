@@ -2,25 +2,26 @@ import React from 'react'
 import _ from 'lodash'
 import { TouchableOpacity } from 'react-native'
 import i18next from "i18next"
-import tw, { Text } from '@tw'
+import tw, { getBgColor, Text } from '@tw'
 
-import { SELECTABLE_COLOR, StatusName } from '../common/styled'
+import { rowName } from '../common/styles'
 import { contentFactory } from '../common/content-factory'
 
-export const StatusHeader = ({item, onToggleOpen, style}) => {
+export const StatusHeader = ({item, onToggleOpen, style = {}}) => {
   const header = (
-    <StatusName
-      style={{
-        ...(contentFactory[item.name] ? {backgroundColor: SELECTABLE_COLOR} : {}),
-        ...(style ? style : {}),
-      }}
+    <Text
+      style={[
+        rowName,
+        (contentFactory[item.name] ? getBgColor('bossanova-900') : {}),
+        style,
+      ]}
     >
       {_.isUndefined(item.displayName)
         ? ((item.name !== item.original ? `${i18next.t('character.stat.weapon')} ` : '')
           + i18next.t(`character.stat.${item.name}`)).replace(/\s/g, '')
         : item.displayName.replace(/\s/g, '')
       }
-    </StatusName>
+    </Text>
   )
   return onToggleOpen ? (
     <TouchableOpacity

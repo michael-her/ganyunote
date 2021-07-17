@@ -1,10 +1,10 @@
 import React from 'react'
+import { View } from 'react-native'
 import { Card, Avatar } from 'react-native-paper'
 import { useDispatch } from 'react-redux'
 import i18next from 'i18next'
 import tw from '@tw'
 
-import { CharacterView } from './character/CharacterView'
 import { characterSheet } from '../Data'
 import { selectChar } from '../Models/actions'
 
@@ -12,7 +12,7 @@ export const CharacterList = (({navigation}) => {
   const dispatch = useDispatch()
   const onSelectChar = (...props) => dispatch(selectChar(...props))
   return (
-    <div style={tw`flex-1 pb-2 pl-2 pr-4 overflow-scroll bg-mirage`}>
+    <View style={tw`flex-1 pb-2 pl-2 pr-4 overflow-scroll bg-mirage`}>
       {Object.values(characterSheet).map(char => (
         <Card
           key={char.name}
@@ -29,6 +29,6 @@ export const CharacterList = (({navigation}) => {
           />
         </Card>
       ))}
-    </div>
+    </View>
   )
 })
