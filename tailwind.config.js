@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+// const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
 const _ = require('lodash')
 

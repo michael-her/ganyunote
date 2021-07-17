@@ -1,21 +1,7 @@
 import React from 'react'
-import { View } from 'react-native'
-import styled from "styled-components/native"
 import i18next from "i18next"
+import { View } from 'react-native'
 import tw, {Text} from '@tw'
-
-// const StyledText = styled.Text`
-//   margin-top: 8px;
-//   line-height: 1.25em;
-//   color: ${props => props.theme.headerCellTextColor};
-// `
-const StyledText = styled.Text`
-  margin-top: 8px;
-  font-family: yumichael;
-  font-size: 1em;
-  line-height: 1.25em;
-  color: ${props => props.theme.headerCellTextColor};
-`
 
 const style = tw`mt-4 leading-6 text-white`
 

@@ -4,7 +4,7 @@ import { View } from 'react-native'
 import { Text } from '@tw'
 
 import { TalentItem } from './help/TalentItem'
-import { sheetTitle, sheetRow, StatusRow } from './common/styles'
+import { sheetTitle, sheetRow } from './common/styles'
 
 export const CharacterHelp = ({char}) => {
   const {talents: {skills}} = char

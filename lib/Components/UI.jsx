@@ -1,11 +1,11 @@
 import React from 'react'
+import i18next from 'i18next'
+import { useSelector } from 'react-redux'
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import i18next from 'i18next'
-import { useSelector } from 'react-redux'
 
-import MainMenu from './MainMenu'
+import { MainMenu } from './MainMenu'
 import { CharacterList } from './CharacterList'
 import { CharacterView } from './character/CharacterView'
 import { NavHeader } from './NavHeader';
