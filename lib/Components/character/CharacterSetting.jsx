@@ -25,10 +25,9 @@ const StatusTalentToggle = ({char, item, opened, onChange}) => {
 }
 
 const ToggleRows = ({char, onChange}) => {
-  const { talents } = char
   const [open, setOpen] = useState(null)
   const toggleOpen = name => setOpen(open === name ? null : name)
-  const configurableTalents = reselectTalent(talents, {talentModes: ['toggle', 'stacks'], path: 'talents', displayPrefix: `character.${char.name}.`})
+  const configurableTalents = reselectTalent(char, {talentModes: ['toggle', 'stacks'], path: 'talents', displayPrefix: `character.${char.name}.`})
   return configurableTalents.map(talent => {
     const toggleTalent = original => {
       setOpen(original)
@@ -41,7 +40,8 @@ const ToggleRows = ({char, onChange}) => {
             <StatusHeader
               item={talent}
               onToggleOpen={toggleTalent}
-              style={getBgColor(talent.toggle ? 'bossanova-900' : 'coolgray-500')}
+              onChange={onChange}
+              style={getBgColor(talent.toggle ? 'bossanova-900' : 'coolgray-600')}
             />
             <Text style={rowValue}>{talent.toggle ? 'ON' : 'OFF'}</Text>
           </View>
@@ -58,7 +58,8 @@ const ToggleRows = ({char, onChange}) => {
             <StatusHeader
               item={talent}
               onToggleOpen={toggleOpen}
-              style={getBgColor(talent.stacks ? 'bossanova-900' : 'coolgray-500')}
+              onChange={onChange}
+              style={getBgColor(talent.stacks ? 'bossanova-900' : 'coolgray-600')}
             />
             <Text style={rowValue}>{`${talent.stacks > 0 ? talent.stacks : 'OFF'}`}</Text>
           </View>
@@ -79,11 +80,11 @@ const ToggleRows = ({char, onChange}) => {
 export const CharacterSetting = ({
   char, onSelectStat, onToggleTalent
 }) => {
-  const {leftStats, mainTalent} = char
+  const {setting, mainTalent} = char
   return (
     <View style={tw`flex-1`}>
       <StatusRows key='mainTalent' {...{char, stats: {mainTalent}, onChange: onSelectStat()}}/>
-      <StatusRows key='setting' {...{char, stats: leftStats, onChange: onSelectStat("leftStats")}}/>
+      <StatusRows key='setting' {...{char, stats: setting, onChange: onSelectStat("setting")}}/>
       <ToggleRows key='toggle' {...{char, onChange: onToggleTalent}}/>
     </View>
   )

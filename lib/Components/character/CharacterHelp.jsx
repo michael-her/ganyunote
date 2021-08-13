@@ -28,11 +28,13 @@ export const CharacterHelp = ({char}) => {
         </For>
       </For>
       <For each="talent" of={['lv20', 'lv70', 'lv0']}>
-        <TalentItem
-          key={talentIndex++}
-          charName={char.name}
-          talentName={talent}
-        />
+        <If condition={char.talents[talent]}>
+          <TalentItem
+            key={talentIndex++}
+            charName={char.name}
+            talentName={talent}
+          />
+        </If>
       </For>
       <View style={sheetRow}/>
       <Text style={sheetTitle}>{i18next.t('character.constellations')}</Text>

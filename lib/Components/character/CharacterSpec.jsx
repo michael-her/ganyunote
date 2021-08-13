@@ -7,7 +7,7 @@ import { StatusRows } from './status/StatusRows'
 export const CharacterSpec = ({char, onSelectStat}) => {
   return (
     <View style={tw`flex-1`}>
-      <StatusRows char={char} stats={char.rightStats} onChange={onSelectStat("rightStats")}/>
+      <StatusRows char={char} stats={char.spec} onChange={onSelectStat("spec")}/>
     </View>
   )
 }

@@ -29,7 +29,15 @@ module.exports = {
       sweetpink: '#FFA3A3', // pyro name
       greenyellow:'#A9FF32',// primary number
       'bossanova-hl': '#7C44A0', // highlight of bossanova
-      bossanova: {
+      pyro: '#FFA3A3',      // pyro
+      hydro: '#9AE2FF',     // hydro
+      dendro: '#A9FF32',    // dendro
+      electro: '#FFBDFF',   // electro
+      anemo: '#8AFFE5',     // anemo
+      cryo: '#87F6FD',      // cryo
+      geo: '#FFF4A3',       // geo
+      phys: '#d1d5db',      // physical
+      bossanova: {          // primary title
         50: '#f2e7f2',
         100: '#e0c4e0',
         200: '#cd9dcd',
@@ -40,8 +48,8 @@ module.exports = {
         700: '#7d3d89',
         800: '#6e377f',
         900: '#542e6b',
-      }, // 
-      coolgray: {
+      }, 
+      coolgray: {           // secondary title
         50: '#f9fafb',
         100: '#f3f4f6',
         200: '#e5e7eb',
@@ -55,6 +63,7 @@ module.exports = {
       }
     },
     minHeight: theme => theme('spacing'),
+    minWidth: theme => theme('spacing'),
   },
   variants: {
     extend: {},
@@ -73,6 +82,8 @@ module.exports = {
         'center',
         'stretch',
         'baseline',
+        'flex-end',
+        'flex-start',
       ]
       const variants = [
         'responsive',
